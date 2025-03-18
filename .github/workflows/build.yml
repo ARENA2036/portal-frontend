@@ -107,7 +107,7 @@ jobs:
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
           #tags: ${{ steps.meta.outputs.tags }}
-          tags: 'arena2036.azurecr.io/portal-frontend:${{github.event.inputs.image_tag}}'
+          tags: 'arena2036.azurecr.io/portal-frontend:${{ github.event.inputs.image_tag }}'
           labels: ${{ steps.meta.outputs.labels }}
 
       # https://github.com/peter-evans/dockerhub-description
