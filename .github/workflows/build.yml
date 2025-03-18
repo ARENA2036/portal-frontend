@@ -26,7 +26,11 @@ on:
     branches:
       - 'chore/frontend-adjustments'
   workflow_dispatch:
-
+    inputs:
+      image_tag:
+        description: 'tag'
+        required: true
+        default: 'latest'
 env:
   IMAGE_NAMESPACE: 'arena2036'
   IMAGE_NAME: 'portal-frontend'
@@ -103,7 +107,7 @@ jobs:
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
           #tags: ${{ steps.meta.outputs.tags }}
-          tags: 'arena2036.azurecr.io/portal-frontend:latest'
+          tags: 'arena2036.azurecr.io/portal-frontend:${{github.event.inputs.image_tag}}'
           labels: ${{ steps.meta.outputs.labels }}
 
       # https://github.com/peter-evans/dockerhub-description
