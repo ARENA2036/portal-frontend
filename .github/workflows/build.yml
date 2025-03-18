@@ -91,7 +91,7 @@ jobs:
         with:
           images: ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=main
+            type=raw,value=feature
             type=raw,value=${{ github.sha }}
 
       - name: Build and push Docker image to ACR
@@ -102,7 +102,8 @@ jobs:
           #platforms: linux/amd64, linux/arm64
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
-          tags: 'arena2036.azurecr.io/portal-frontend:latest'
+          tags: ${{ steps.meta.outputs.tags }}
+          #tags: 'arena2036.azurecr.io/portal-frontend:latest'
           labels: ${{ steps.meta.outputs.labels }}
 
       # https://github.com/peter-evans/dockerhub-description
