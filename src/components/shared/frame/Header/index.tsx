@@ -33,7 +33,7 @@ import {
   Typography,
 } from '@catena-x/portal-shared-components'
 import type { MenuItem, Tree } from 'types/MainTypes'
-import { getAssetBase } from 'services/EnvironmentService'
+//import { getAssetBase } from 'services/EnvironmentService'
 import {
   ApplicationStatus,
   useFetchApplicationsQuery,

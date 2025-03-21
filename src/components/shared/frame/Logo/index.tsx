@@ -20,7 +20,7 @@
 
 import { NavLink } from 'react-router-dom'
 import { Image } from '@catena-x/portal-shared-components'
-import { getAssetBase } from 'services/EnvironmentService'
+//import { getAssetBase } from 'services/EnvironmentService'
 
 export const Logo = () => (
   <NavLink to="/">
