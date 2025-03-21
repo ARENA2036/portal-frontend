@@ -203,7 +203,7 @@ export const Header = ({
       <div className="mobileNav">
         <div className="mobileHeader">
           <img
-            src={`${getAssetBase()}/images/logos/arena-logo.svg`}
+            src={`/arena-logo.svg`}
             alt="logo"
           />
         </div>
