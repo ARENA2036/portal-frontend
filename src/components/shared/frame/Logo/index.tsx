@@ -20,11 +20,11 @@
 
 import { NavLink } from 'react-router-dom'
 import { Image } from '@catena-x/portal-shared-components'
-//import { getAssetBase } from 'services/EnvironmentService'
+import { getAssetBase } from 'services/EnvironmentService'
 
 export const Logo = () => (
   <NavLink to="/">
-    <Image src={`/arena-logo.svg`} style={{width: '250px', height: '50px'}}  />
+    <Image src={`${getAssetBase()}/images/logos/arena-logo.svg`} style={{width: '250px', height: '50px'}}  />
         
   </NavLink>
 )
