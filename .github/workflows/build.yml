@@ -96,7 +96,6 @@ jobs:
         with:
           images: ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=feature
             type=raw,value=${{ github.event.inputs.image_tag }}
 
       - name: Build and push Docker image to ACR
@@ -107,7 +106,8 @@ jobs:
           #platforms: linux/amd64, linux/arm64
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          # tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}, ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
           # tags: ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           labels: ${{ steps.meta.outputs.labels }}
 
