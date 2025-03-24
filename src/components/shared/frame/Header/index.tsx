@@ -205,6 +205,7 @@ export const Header = ({
           <img
             src={`${getAssetBase()}/images/logos/arena-logo.svg`}
             alt="logo"
+            style={{ width: '200px' }}
           />
         </div>
         <div className="mobileHeaderRight">

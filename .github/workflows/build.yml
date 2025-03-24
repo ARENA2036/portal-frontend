@@ -25,6 +25,7 @@ on:
   push:
     branches:
       - 'chore/frontend-adjustments'
+      - 'main'
   workflow_dispatch:
     inputs:
       image_tag:
@@ -34,7 +35,6 @@ on:
 env:
   IMAGE_NAMESPACE: 'arena2036.azurecr.io'
   IMAGE_NAME: 'portal-frontend'
-  IMAGE_TAG: '${{ github.event.inputs.image_tag }}'
   # variables needed for scripts/legal-notice.sh
   SERVER_URL: '${{ github.server_url }}'
   REPOSITORY: '${{ github.repository }}'
@@ -59,11 +59,11 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      # - name: Prettier Checks
-      #   run: yarn pretty:check
+      - name: Prettier Checks
+        run: yarn pretty:check --write
 
-      # - name: Linter Checks
-      #   run: yarn lint
+      - name: Linter Checks
+        run: yarn lint
 
       # - name: Add content to Legal Notice
       #   run: yarn build:legal-notice
@@ -83,13 +83,6 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
-      # - name: Login to DockerHub
-      #   if: github.event_name != 'pull_request'
-      #   uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3.3.0
-      #   with:
-      #     username: ${{ secrets.DOCKER_HUB_USER }}
-      #     password: ${{ secrets.DOCKER_HUB_TOKEN }}
-
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@369eb591f429131d6889c46b94e711f089e6ca96 # v5.6.1
@@ -106,9 +99,7 @@ jobs:
           #platforms: linux/amd64, linux/arm64
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
-          # tags: ${{ steps.meta.outputs.tags }}
           tags: ${{ steps.meta.outputs.tags }}, ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
-          # tags: ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           labels: ${{ steps.meta.outputs.labels }}
 
       # https://github.com/peter-evans/dockerhub-description
