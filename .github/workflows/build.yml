@@ -32,7 +32,7 @@ on:
         required: true
         default: 'latest'
 env:
-  IMAGE_NAMESPACE: 'arena2036'
+  IMAGE_NAMESPACE: 'arena2036.azurecr.io'
   IMAGE_NAME: 'portal-frontend'
   # variables needed for scripts/legal-notice.sh
   SERVER_URL: '${{ github.server_url }}'
@@ -107,7 +107,7 @@ jobs:
           push: true
           # push: ${{ github.event_name != 'pull_request' }}
           #tags: ${{ steps.meta.outputs.tags }}
-          tags: 'arena2036.azurecr.io/portal-frontend:${{ github.event.inputs.image_tag }}'
+          tags: ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.image_tag }}
           labels: ${{ steps.meta.outputs.labels }}
 
       # https://github.com/peter-evans/dockerhub-description
