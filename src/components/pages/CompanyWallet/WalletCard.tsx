@@ -97,10 +97,10 @@ export default function WalletCard({
           <div className="icon-text">
             <div className="icon">
               <img
-                src="/cx-logo.svg"
+                src="/arena-logo.svg"
                 alt="cx logo"
                 style={{
-                  width: 40,
+                  width: 50,
                 }}
               />
             </div>

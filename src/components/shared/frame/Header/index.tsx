@@ -222,7 +222,11 @@ export const Header = ({
       </header>
       <div className="mobileNav">
         <div className="mobileHeader">
-          <img src={`${getAssetBase()}/images/logos/cx-short.svg`} alt="logo" />
+          <img
+            src={`${getAssetBase()}/images/logos/arena-logo.svg`}
+            alt="logo"
+            style={{ width: '200px' }}
+          />
         </div>
         <div className="mobileHeaderRight">
           <div
