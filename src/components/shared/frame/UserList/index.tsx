@@ -26,7 +26,7 @@ import {
   StatusTag,
   PageLoadingTable,
   type PaginFetchArgs,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import SubHeaderTitle from 'components/shared/frame/SubHeaderTitle'
 import type { TenantUser } from 'features/admin/userApiSlice'

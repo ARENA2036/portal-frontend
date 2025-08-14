@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import type { StatusVariants } from '@arena2036/portal-shared-components-construct-x'
+import type { StatusVariants } from '@arena2036/portal-shared-components-arena-x'
 import { apiBaseQuery } from 'utils/rtkUtil'
 import type { DeclineRequestType } from './adminBoardApiSlice'
 

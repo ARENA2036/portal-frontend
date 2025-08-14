@@ -21,7 +21,7 @@
 import {
   CardHorizontal,
   CircleProgress,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { Grid, useTheme } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import type { ServiceRequest } from 'features/serviceMarketplace/serviceApiSlice'

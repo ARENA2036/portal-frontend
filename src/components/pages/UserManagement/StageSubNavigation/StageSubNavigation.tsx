@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { useEffect } from 'react'
-import { SubNavigation } from '@arena2036/portal-shared-components-construct-x'
+import { SubNavigation } from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { PAGES, ROLES } from 'types/Constants'

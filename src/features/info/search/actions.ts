@@ -36,7 +36,7 @@ import { name, type SearchItem } from './types'
 import type {
   CardItems,
   PaginResult,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { isUUID, Patterns } from 'types/Patterns'
 import type {
   BusinessPartner,

@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 import {
   ErrorBar,
   PageHeader,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { type AppMarketplaceApp } from 'features/apps/types'
 import { useFetchProvidedAppsQuery } from 'features/apps/apiSlice'
 import NoItems from '../NoItems'

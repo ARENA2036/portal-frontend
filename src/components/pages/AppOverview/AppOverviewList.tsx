@@ -21,7 +21,7 @@
 import {
   type CardItems,
   Cards,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { PAGES } from 'types/Constants'

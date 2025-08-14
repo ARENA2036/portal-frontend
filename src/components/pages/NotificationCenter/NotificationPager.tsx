@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { Box } from '@mui/material'
-import { CircleProgress } from '@arena2036/portal-shared-components-construct-x'
+import { CircleProgress } from '@arena2036/portal-shared-components-arena-x'
 import {
   metaSelector,
   notificationFetchSelector,

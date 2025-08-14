@@ -19,7 +19,7 @@
 
 import debounce from 'lodash.debounce'
 import { useTranslation } from 'react-i18next'
-import { SearchInput } from '@arena2036/portal-shared-components-construct-x'
+import { SearchInput } from '@arena2036/portal-shared-components-arena-x'
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearSearch, fetchSearch } from 'features/info/search/actions'

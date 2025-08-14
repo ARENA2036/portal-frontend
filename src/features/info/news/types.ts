@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import type { CardItems } from '@arena2036/portal-shared-components-construct-x'
+import type { CardItems } from '@arena2036/portal-shared-components-arena-x'
 import { InitialListState, type ListState } from 'types/MainTypes'
 
 export const name = 'info/news'

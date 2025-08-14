@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Input } from '@arena2036/portal-shared-components-construct-x'
+import { Input } from '@arena2036/portal-shared-components-arena-x'
 import debounce from 'lodash.debounce'
 import { useState, useMemo, useCallback } from 'react'
 import { type SxProps } from '@mui/system'

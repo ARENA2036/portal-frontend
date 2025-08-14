@@ -28,7 +28,7 @@ import {
   PageHeader,
   Table,
   type PaginResult,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { updatePartnerSelector } from 'features/control/updates'

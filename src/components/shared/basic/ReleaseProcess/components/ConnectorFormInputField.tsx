@@ -26,7 +26,7 @@ import {
   Checkbox,
   DropArea,
   type DropAreaProps,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 
 export const ConnectorFormInputField = ({
   control,

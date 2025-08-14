@@ -21,7 +21,7 @@ import {
   Image,
   LogoGrayData,
   TransparentPixel,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useEffect, useState } from 'react'
 import { getApiBase, getAssetBase } from 'services/EnvironmentService'
 import { fetchImageWithToken } from 'services/ImageService'

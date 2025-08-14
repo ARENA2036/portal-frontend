@@ -27,7 +27,7 @@ import {
   CircleProgress,
   LoadingButton,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import {
   ApplicationStatus,
   useDeclineRegistrationMutation,
@@ -101,7 +101,7 @@ export default function DeleteCompany() {
           <div className="container">
             <div className="logo text-center">
               <img
-                src={`${getAssetBase()}/images/logos/construct-x-logo.svg`}
+                src={`${getAssetBase()}/images/logos/Arena-X-logo.svg`}
                 alt="logo"
               />
             </div>

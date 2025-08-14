@@ -29,7 +29,7 @@ import {
   type DropAreaProps,
   LoadingButton,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useUploadCSVMutation } from 'features/companyData/companyDataApiSlice'
 import { Dropzone } from 'components/shared/basic/Dropzone'
 import { useDispatch } from 'react-redux'

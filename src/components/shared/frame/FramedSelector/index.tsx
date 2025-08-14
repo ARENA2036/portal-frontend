@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Typography } from '@arena2036/portal-shared-components-construct-x'
+import { Typography } from '@arena2036/portal-shared-components-arena-x'
 import { Box } from '@mui/material'
 
 import './style.scss'

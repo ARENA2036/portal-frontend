@@ -19,10 +19,7 @@
 
 import { Box, Divider } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import {
-  Button,
-  Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+import { Button, Typography } from '@arena2036/portal-shared-components-arena-x'
 import { companyDataSelector } from 'features/companyData/slice'
 import { useSelector } from 'react-redux'
 

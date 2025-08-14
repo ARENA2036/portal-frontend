@@ -27,7 +27,7 @@ import {
   DialogHeader,
   LoadingButton,
   PageSnackbar,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { UserRoles } from './UserRoles'
 import {
   rolesToAddSelector,

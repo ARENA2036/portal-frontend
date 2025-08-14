@@ -24,7 +24,7 @@ import { useParams } from 'react-router-dom'
 import {
   PageLoadingTable,
   StatusTag,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import type { GridRowId } from '@mui/x-data-grid'
 import { useTranslation } from 'react-i18next'
 import uniqueId from 'lodash/uniqueId'

@@ -18,7 +18,7 @@
  ********************************************************************************/
 
 import { useTranslation, Trans } from 'react-i18next'
-import { Typography } from '@arena2036/portal-shared-components-construct-x'
+import { Typography } from '@arena2036/portal-shared-components-arena-x'
 import './style.scss'
 import {
   type WalletContent,

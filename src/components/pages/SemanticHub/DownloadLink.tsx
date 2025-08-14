@@ -19,10 +19,7 @@
  ********************************************************************************/
 
 import DownloadIcon from '@mui/icons-material/Download'
-import {
-  Button,
-  Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+import { Button, Typography } from '@arena2036/portal-shared-components-arena-x'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { getSemanticApiBase } from 'services/EnvironmentService'

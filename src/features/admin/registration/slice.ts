@@ -38,7 +38,7 @@ import { mapRegistrationRequestResponseToDataGrid } from 'utils/dataMapper'
 import type { RootState } from 'features/store'
 import type { PaginationData } from '../../connector/types'
 import uniq from 'lodash.uniq'
-import type { PaginResult } from '@arena2036/portal-shared-components-construct-x'
+import type { PaginResult } from '@arena2036/portal-shared-components-arena-x'
 
 export const slice = createSlice({
   name,

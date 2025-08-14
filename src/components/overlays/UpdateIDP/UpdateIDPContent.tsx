@@ -35,7 +35,7 @@ import {
   StaticTable,
   type TableType,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 
 const isWellknownMetadata = (expr: string) =>
   isURL(expr) && expr.endsWith('.well-known/openid-configuration')

@@ -22,7 +22,7 @@ import { useEffect, useState } from 'react'
 import {
   Navigation,
   ScrollToTopButton,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom'
 import './style.scss'

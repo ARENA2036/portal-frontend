@@ -29,7 +29,7 @@ import AuthorizingRouter from 'components/AuthorizingRouter'
 import {
   SharedThemeProvider,
   SharedCssBaseline,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import CompanyService from 'services/CompanyService'
 import ErrorBoundary from 'components/pages/ErrorBoundary'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import type { PaginResult } from '@arena2036/portal-shared-components-construct-x'
+import type { PaginResult } from '@arena2036/portal-shared-components-arena-x'
 import { initialPaginResult, RequestState } from 'types/MainTypes'
 import { type DocumentMapper } from '../applicationRequestApiSlice'
 

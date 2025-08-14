@@ -22,7 +22,7 @@ import {
   DialogContent,
   DialogHeader,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import AppOverViewDetails from 'components/pages/AppOverview/AppOverViewDetails'
 import { closeOverlay } from 'features/control/overlay'

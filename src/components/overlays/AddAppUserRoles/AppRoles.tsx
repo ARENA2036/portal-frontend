@@ -18,10 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import {
-  Checkbox,
-  Alert,
-} from '@arena2036/portal-shared-components-construct-x'
+import { Checkbox, Alert } from '@arena2036/portal-shared-components-arena-x'
 import { Box } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'

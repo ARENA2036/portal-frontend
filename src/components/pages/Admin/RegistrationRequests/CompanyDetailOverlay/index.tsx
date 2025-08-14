@@ -34,7 +34,7 @@ import {
   UploadStatus,
   DialogActions,
   CircleProgress,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { Box, useTheme } from '@mui/material'
 import { useSelector } from 'react-redux'
 import { adminRegistrationSelector } from 'features/admin/registration/slice'

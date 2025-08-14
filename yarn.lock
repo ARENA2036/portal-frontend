@@ -15,6 +15,30 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+"@arena2036/portal-shared-components-arena-x@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/@arena2036/portal-shared-components-arena-x/-/portal-shared-components-arena-x-0.0.4.tgz"
+  integrity sha512-JaxAnEoSa4ZsQZyg1tFa/QIUR4ElrW6rFhsrJ30V+LgGs/neOosVh694/dghlEXqepKFn1xXIUH7v9N6iyxA7g==
+  dependencies:
+    "@date-io/date-fns" "^3.0.0"
+    "@emotion/react" "^11.11.4"
+    "@emotion/styled" "^11.11.0"
+    "@mui/icons-material" "^5.11.16"
+    "@mui/material" "^5.13.2"
+    "@mui/system" "^5.15.14"
+    "@mui/x-data-grid" "^6.19.8"
+    "@mui/x-date-pickers" "^6.19.8"
+    autosuggest-highlight "^3.3.4"
+    date-fns "^3.6.0"
+    i18next "^23.10.1"
+    jquery "^3.7.1"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-i18next "^14.1.0"
+    react-player "^2.15.1"
+    react-slick "^0.30.2"
+    slick-carousel "^1.8.1"
+
 "@arena2036/portal-shared-components-construct-x@^0.0.55":
   version "0.0.55"
   resolved "https://registry.npmjs.org/@arena2036/portal-shared-components-construct-x/-/portal-shared-components-construct-x-0.0.55.tgz"

@@ -22,7 +22,7 @@ import Box from '@mui/material/Box'
 import {
   LoadMoreButton as LoadMoreButtonShared,
   type LoadMoreButtonProps as LoadMoreButtonSharedProps,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 
 import { useTranslation } from 'react-i18next'
 

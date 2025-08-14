@@ -28,7 +28,7 @@ import {
   LoadingButton,
   PageSnackbar,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { closeOverlay } from 'features/control/overlay'
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'

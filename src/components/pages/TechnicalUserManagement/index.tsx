@@ -25,7 +25,7 @@ import SubHeaderTitle from 'components/shared/frame/SubHeaderTitle'
 import {
   Button,
   PageNotifications,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { show } from 'features/control/overlay'
 import UserService from 'services/UserService'
 import {

@@ -24,7 +24,7 @@ import {
   Button,
   Typography,
   type CardItems,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useNavigate } from 'react-router-dom'
 import './style.scss'
 import { useFetchActiveAppsQuery } from 'features/apps/apiSlice'

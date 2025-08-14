@@ -26,7 +26,7 @@ import {
   Checkbox,
   OrderStatusButton,
   paletteDefinitions,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'

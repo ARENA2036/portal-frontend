@@ -17,10 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import {
-  Button,
-  MainHeader,
-} from '@arena2036/portal-shared-components-construct-x'
+import { Button, MainHeader } from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import PageService from 'services/PageService'
 import { label as AppList } from '../AppListSection'

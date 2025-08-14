@@ -22,7 +22,7 @@ import {
   Typography,
   Card,
   Carousel,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import { useTranslation } from 'react-i18next'

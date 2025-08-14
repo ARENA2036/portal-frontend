@@ -24,7 +24,7 @@ import {
   Dialog,
   DialogContent,
   DialogHeader,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 
 interface ServerResponseOverlayProps {
   title: string

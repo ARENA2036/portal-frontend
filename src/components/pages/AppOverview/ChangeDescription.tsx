@@ -23,7 +23,7 @@ import {
   Button,
   LoadingButton,
   TabPanel,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { Box, IconButton, Tab, Tabs } from '@mui/material'

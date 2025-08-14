@@ -20,7 +20,7 @@
 
 import { getApiBase } from 'services/EnvironmentService'
 import { getHeaders } from 'services/RequestService'
-import type { PaginResult } from '@arena2036/portal-shared-components-construct-x'
+import type { PaginResult } from '@arena2036/portal-shared-components-arena-x'
 import { HttpClient } from 'utils/httpClient'
 import type { TenantUser } from '../userApiSlice'
 import type { AddUser } from './types'

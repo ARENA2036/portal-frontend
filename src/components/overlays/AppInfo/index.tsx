@@ -22,7 +22,7 @@ import AppDetailContentDetails from 'components/pages/AppDetail/AppDetailContent
 import {
   DialogContent,
   DialogHeader,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useFetchAppDetailsQuery } from 'features/apps/apiSlice'
 import { show } from 'features/control/overlay'
 import { useDispatch } from 'react-redux'

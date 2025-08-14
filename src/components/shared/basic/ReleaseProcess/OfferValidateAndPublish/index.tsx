@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { LogoGrayData } from '@arena2036/portal-shared-components-construct-x'
+import { LogoGrayData } from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { useCallback, useMemo } from 'react'
 import { useSelector } from 'react-redux'

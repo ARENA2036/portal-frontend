@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { createSlice } from '@reduxjs/toolkit'
-import type { CardItems } from '@arena2036/portal-shared-components-construct-x'
+import type { CardItems } from '@arena2036/portal-shared-components-arena-x'
 import { type RootState } from 'features/store'
 import { RequestState } from 'types/MainTypes'
 import { apiSlice } from './apiSlice'

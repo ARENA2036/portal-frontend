@@ -21,7 +21,7 @@
 import {
   IconButton,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import type { ProviderProps } from '../StaticTypes'
 import '../style.scss'
 import RenderImage from './RenderImage'

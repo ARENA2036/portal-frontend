@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 import {
   StaticTable,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { type FetchSubscriptionResponseType } from 'features/apps/types'
 import { PAGES, ROLES } from 'types/Constants'
 import { userHasPortalRole } from 'services/AccessService'

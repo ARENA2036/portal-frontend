@@ -24,7 +24,7 @@ import {
   DialogActions,
   Button,
   CircleProgress,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import SubHeaderTitle from 'components/shared/frame/SubHeaderTitle'
 import { useDispatch } from 'react-redux'
 import { closeOverlay } from 'features/control/overlay'

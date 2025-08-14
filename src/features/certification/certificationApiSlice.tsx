@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import type { PaginFetchArgs } from '@arena2036/portal-shared-components-construct-x'
+import type { PaginFetchArgs } from '@arena2036/portal-shared-components-arena-x'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { getSsiBase } from 'services/EnvironmentService'
 import { PAGE_SIZE } from 'types/Constants'

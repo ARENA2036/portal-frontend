@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import type { GridColDef } from '@mui/x-data-grid'
-import { IconButton } from '@arena2036/portal-shared-components-construct-x'
+import { IconButton } from '@arena2036/portal-shared-components-arena-x'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import type { BusinessPartner } from 'features/newPartnerNetwork/types'
 import { OVERLAYS } from 'types/Constants'
@@ -57,7 +57,7 @@ export const PartnerNetworksTableColumns = (
         params?.row?.member ? (
           <img
             src="/logo.svg"
-            alt="construct-x logo"
+            alt="Arena-X logo"
             style={{
               width: 40,
             }}

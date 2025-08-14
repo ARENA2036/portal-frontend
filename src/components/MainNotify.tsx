@@ -22,7 +22,7 @@ import { useSelector } from 'react-redux'
 import {
   PageSnackbar,
   PageSnackbarStack,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { notifySelector } from 'features/control/notify'
 
 export default function MainNotify() {

@@ -27,7 +27,7 @@ import {
   DialogHeader,
   Stepper,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useDispatch } from 'react-redux'
 import { closeOverlay, exec } from 'features/control/overlay'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { MainHeader } from '@arena2036/portal-shared-components-construct-x'
+import { MainHeader } from '@arena2036/portal-shared-components-arena-x'
 import { getAssetBase } from 'services/EnvironmentService'
 import { useMediaQuery, useTheme } from '@mui/material'
 

@@ -27,7 +27,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined'
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined'
-import { Typography } from '@arena2036/portal-shared-components-construct-x'
+import { Typography } from '@arena2036/portal-shared-components-arena-x'
 import {
   type SSIDetailData,
   StatusEnum,

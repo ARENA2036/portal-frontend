@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import type { CardItems } from '@arena2036/portal-shared-components-construct-x'
+import type { CardItems } from '@arena2036/portal-shared-components-arena-x'
 import type { PrivacyPolicyType } from 'features/adminBoard/adminBoardApiSlice'
 import type { UseCaseType } from 'features/appManagement/types'
 import {

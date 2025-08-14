@@ -27,7 +27,7 @@ import {
   Tab,
   TabPanel,
   Image,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import CommonService from 'services/CommonService'
 import { getAssetBase } from 'services/EnvironmentService'
 import { uniqueId } from 'lodash'

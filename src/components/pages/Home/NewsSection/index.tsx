@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Cards } from '@arena2036/portal-shared-components-construct-x'
+import { Cards } from '@arena2036/portal-shared-components-arena-x'
 import './style.scss'
 import { useGetItemsQuery } from 'features/info/news/apiSlice'
 
@@ -31,8 +31,8 @@ export default function NewsSection() {
         items={items}
         columns={3}
         buttonText="Details"
-        imageSize="normal"
-        imageShape="round"
+        imageSize="medium"
+        imageShape="square"
         variant="text-only"
       />
     </section>

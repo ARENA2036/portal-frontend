@@ -20,7 +20,7 @@
 import {
   IconButton,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import '../style.scss'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import { Trans } from 'react-i18next'

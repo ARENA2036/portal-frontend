@@ -21,7 +21,7 @@ import { Box } from '@mui/material'
 import {
   Typography,
   LanguageSwitch,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useDispatch } from 'react-redux'
 import i18next, { changeLanguage, t } from 'i18next'
 import I18nService from 'services/I18nService'

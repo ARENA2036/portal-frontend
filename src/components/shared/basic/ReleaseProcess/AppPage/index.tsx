@@ -29,7 +29,7 @@ import {
   DropArea,
   type DropAreaProps,
   PageSnackbar,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import { Divider, InputLabel, Grid, Box } from '@mui/material'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'

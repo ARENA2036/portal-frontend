@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Chip } from '@arena2036/portal-shared-components-construct-x'
+import { Chip } from '@arena2036/portal-shared-components-arena-x'
 import { useTranslation } from 'react-i18next'
 import type { TenantUserDetails } from 'features/admin/userApiSlice'
 import { useFetchAppDetailsQuery } from 'features/apps/apiSlice'

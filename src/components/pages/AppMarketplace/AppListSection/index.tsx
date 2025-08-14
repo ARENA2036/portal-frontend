@@ -22,7 +22,7 @@ import {
   CircleProgress,
   ErrorBar,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useTheme } from '@mui/material'
 import { AppListGroupView } from '../AppListGroupView'
 import { useDispatch, useSelector } from 'react-redux'

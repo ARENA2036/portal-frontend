@@ -30,7 +30,7 @@ import {
   StatusTag,
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import PixIcon from '@mui/icons-material/Pix'
 import LaunchIcon from '@mui/icons-material/Launch'
 import uniqueId from 'lodash/uniqueId'

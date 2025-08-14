@@ -29,7 +29,7 @@ import {
   Input,
   Typography,
   CircleProgress,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { isValidCancelInput } from 'types/Patterns'
 import { useDeclineChecklistMutation } from 'features/admin/applicationRequestApiSlice'
 interface ConfirmationOverlayProps {

@@ -24,7 +24,7 @@ import { Outlet, useNavigate, useSearchParams } from 'react-router-dom'
 import {
   CircleProgress,
   ErrorPage,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { Header } from './shared/frame/Header'
 import { Footer } from './shared/frame/Footer'
 import { useTranslation } from 'react-i18next'

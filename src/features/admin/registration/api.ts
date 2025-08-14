@@ -25,7 +25,7 @@ import { getHeaders } from 'services/RequestService'
 import { PAGE_SIZE } from 'types/Constants'
 import type { SearchParams } from '../../connector/types'
 import qs from 'qs'
-import type { PaginResult } from '@arena2036/portal-shared-components-construct-x'
+import type { PaginResult } from '@arena2036/portal-shared-components-arena-x'
 
 export class Api extends HttpClient {
   private static classInstance?: Api

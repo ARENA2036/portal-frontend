@@ -24,7 +24,7 @@ import {
   StatusTag,
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import CheckBoxIcon from '@mui/icons-material/CheckBox'
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank'

@@ -29,7 +29,7 @@ import {
   Typography,
   Input,
   CircleProgress,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { isBPN } from 'types/Patterns'
 interface AddBpnOveralyProps {
   openDialog?: boolean

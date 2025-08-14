@@ -33,7 +33,7 @@ import {
   SelectList,
   Tooltips,
   Dialog,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { Box } from '@mui/material'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined'

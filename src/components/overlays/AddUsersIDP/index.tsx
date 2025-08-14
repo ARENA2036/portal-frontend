@@ -33,7 +33,7 @@ import {
   Textarea,
   Typography,
   type DropAreaProps,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useDispatch, useSelector } from 'react-redux'
 import { closeOverlay } from 'features/control/overlay'
 import { useCallback, useEffect, useMemo, useState } from 'react'

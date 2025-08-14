@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next'
 import {
   Typography,
   PageSnackbar,
-} from '@arena2036/portal-shared-components-construct-x'
+} from '@arena2036/portal-shared-components-arena-x'
 import { useDispatch } from 'react-redux'
 import { fetchCompanyDetail } from 'features/admin/registration/actions'
 import './style.scss'
