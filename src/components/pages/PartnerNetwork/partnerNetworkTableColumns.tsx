@@ -57,7 +57,7 @@ export const PartnerNetworksTableColumns = (
         params?.row?.member ? (
           <img
             src="/logo.svg"
-            alt="Arena-X logo"
+            alt="ARENA2036-X logo"
             style={{
               width: 40,
             }}

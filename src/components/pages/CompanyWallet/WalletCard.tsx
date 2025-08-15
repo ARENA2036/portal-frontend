@@ -99,7 +99,7 @@ export default function WalletCard({
               <img
                 id="wallet-logo"
                 src="/arena-x-logo-transparent.svg"
-                alt="Arena-X Logo"
+                alt="ARENA2036-X Logo"
                 style={{ display: 'inline', width: '100px', height: '80px' }}
               />
             </div>
