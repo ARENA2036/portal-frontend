@@ -27,11 +27,11 @@ export const Logo = () => (
     <Image
       src={`${getAssetBase()}/images/logos/arena-x-logo.svg`}
       style={{
-        width: '100%',
-        height: '25%',
+        width: '80%',
+        height: '100%',
         borderRadius: '0px',
-        marginLeft: '10px',
-        marginTop: '35px',
+        marginLeft: '0px',
+        marginTop: '0px',
       }}
     />
   </NavLink>
