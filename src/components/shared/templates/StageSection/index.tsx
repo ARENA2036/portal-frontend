@@ -42,7 +42,7 @@ export default function SearchSection({
         headerHeight={551}
         subTitleWidth={isMobile ? '100%' : 800}
         background="LinearGradient1"
-        imagePath={`${getAssetBase()}/images/content/company-roles.svg`}
+        imagePath={`${getAssetBase()}/images/content/company-roles.png`}
       />
     </div>
   )

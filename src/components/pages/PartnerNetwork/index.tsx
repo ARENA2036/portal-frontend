@@ -25,7 +25,7 @@ import {
   useFetchBusinessPartnerAddressMutation,
 } from 'features/newPartnerNetwork/partnerNetworkApiSlice'
 import {
-  PageHeader,
+  PageHeader2,
   Table,
   type PaginResult,
 } from '@arena2036/portal-shared-components-arena-x'
@@ -136,7 +136,7 @@ const PartnerNetwork = () => {
 
   return (
     <main className="partner-network-page-container">
-      <PageHeader
+      <PageHeader2
         title={t('content.partnernetwork.headertitle')}
         topPage={false}
         headerHeight={200}

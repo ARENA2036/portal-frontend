@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@arena2036/portal-shared-components-arena-x@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/@arena2036/portal-shared-components-arena-x/-/portal-shared-components-arena-x-0.0.4.tgz"
-  integrity sha512-JaxAnEoSa4ZsQZyg1tFa/QIUR4ElrW6rFhsrJ30V+LgGs/neOosVh694/dghlEXqepKFn1xXIUH7v9N6iyxA7g==
+"@arena2036/portal-shared-components-arena-x@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/@arena2036/portal-shared-components-arena-x/-/portal-shared-components-arena-x-0.0.6.tgz"
+  integrity sha512-MovivXnngpzOs5a2ZyD60sS6Q0uc638I13nqnUpl3A4uGLj3DZb91GI58m833u3tBWiMSv38mI1230RRFD077Q==
   dependencies:
     "@date-io/date-fns" "^3.0.0"
     "@emotion/react" "^11.11.4"

@@ -26,7 +26,7 @@ import {
   SearchInput,
   ViewSelector,
   SortOption,
-  PageHeader,
+  PageHeader2,
   LoadMoreButton,
   CircleProgress,
 } from '@arena2036/portal-shared-components-arena-x'
@@ -398,7 +398,7 @@ export default function CommonAdminBoard({
 
   return (
     <div className="adminBoard">
-      <PageHeader title={headerTitle} topPage={true} headerHeight={200} />
+      <PageHeader2 title={headerTitle} topPage={true} headerHeight={200} />
       <div className="mainContainer">
         <div className="searchContainer">
           <SearchInput

@@ -20,7 +20,7 @@
 
 import {
   Button,
-  PageHeader,
+  PageHeader2,
   PageSnackbar,
   Typography,
 } from '@arena2036/portal-shared-components-arena-x'
@@ -128,7 +128,7 @@ export default function SemanticHub() {
   return (
     <>
       <Box sx={{ position: 'sticky' }}>
-        <PageHeader
+        <PageHeader2
           headerHeight={200}
           topPage={true}
           title={t('content.semantichub.title')}

@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import {
-  PageHeader,
+  PageHeader2,
   Typography,
   Button,
   ProcessList,
@@ -80,7 +80,7 @@ export const ReleaseProcess = ({
 }: ReleaseProcessProps) => {
   return (
     <div className="appOverview-main">
-      <PageHeader title={headerTitle} topPage={true} headerHeight={200} />
+      <PageHeader2 title={headerTitle} topPage={true} headerHeight={200} />
       <div className="desc-section">
         <div className="container">
           <Typography variant="h3" className="desc-heading">

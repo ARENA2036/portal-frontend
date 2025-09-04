@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "@arena2036/portal-shared-components-arena-x": "^0.0.4",
+    "@arena2036/portal-shared-components-arena-x": "^0.0.6",
     "@arena2036/portal-shared-components-construct-x": "^0.0.55",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",

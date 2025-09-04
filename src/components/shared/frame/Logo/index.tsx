@@ -25,13 +25,13 @@ import { getAssetBase } from 'services/EnvironmentService'
 export const Logo = () => (
   <NavLink to="/">
     <Image
-      src={`${getAssetBase()}/images/logos/arena-x-logo.svg`}
+      src={`${getAssetBase()}/images/logos/arena-x-logo.png`}
       style={{
-        width: '80%',
-        height: '100%',
+        width: '100%',
+
         borderRadius: '0px',
         marginLeft: '0px',
-        marginTop: '0px',
+        marginTop: '10px',
       }}
     />
   </NavLink>

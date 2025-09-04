@@ -21,7 +21,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
-  PageHeader,
+  PageHeader2,
   ViewSelector,
   SearchInput,
   Cards,
@@ -208,7 +208,7 @@ export default function ServiceListOverview() {
 
   return (
     <main>
-      <PageHeader
+      <PageHeader2
         title={t('serviceOverview.headerTitle')}
         topPage={true}
         headerHeight={200}

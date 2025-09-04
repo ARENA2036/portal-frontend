@@ -21,7 +21,7 @@
 import { useCallback, useMemo, useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
-  PageHeader,
+  PageHeader2,
   Typography,
   ViewSelector,
   SearchInput,
@@ -251,7 +251,7 @@ export default function AppOverview() {
 
   return (
     <div className="appOverview-app">
-      <PageHeader
+      <PageHeader2
         title={t('content.appOverview.headerTitle')}
         topPage={true}
         headerHeight={200}
