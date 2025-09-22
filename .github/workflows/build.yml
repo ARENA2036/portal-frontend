@@ -24,7 +24,6 @@ name: build
 on:
   push:
     branches:
-      - 'feature/construct-x-portal'
       - 'main'
   workflow_dispatch:
     inputs:
@@ -33,7 +32,7 @@ on:
         required: true
         default: 'latest'
 env:
-  IMAGE_NAMESPACE: 'constructx.azurecr.io'
+  IMAGE_NAMESPACE: 'arena2036.azurecr.io'
   IMAGE_NAME: 'portal-frontend'
   # variables needed for scripts/legal-notice.sh
   SERVER_URL: '${{ github.server_url }}'
@@ -79,9 +78,9 @@ jobs:
       - name: Docker Login
         uses: azure/docker-login@v1
         with:
-          login-server: ${{ secrets.AZURE_URL_CONSTRUCTX }}
-          username: ${{ secrets.ACR_USERNAME_CONSTRUCTX }}
-          password: ${{ secrets.ACR_PASSWORD_CONSTRUCTX }}
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Docker meta
         id: meta
