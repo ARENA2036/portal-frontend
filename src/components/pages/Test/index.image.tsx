@@ -32,7 +32,7 @@ export default function ImageTest() {
   const [data, setData] = useState<string>(TransparentPixel)
 
   useEffect(() => {
-    fetchImageWithToken(`${getAssetBase()}/images/frame/Home.png`)
+    fetchImageWithToken(`${getAssetBase()}/images/frame/desktop-bg-frames.png`)
       .then((buffer) => {
         setData(URL.createObjectURL(new Blob([buffer], { type: 'image/png' })))
       })

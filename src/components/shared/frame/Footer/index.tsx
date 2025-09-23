@@ -30,6 +30,10 @@ import { PAGES } from 'types/Constants'
 import { currentActiveStep } from 'features/appManagement/slice'
 import { useSelector } from 'react-redux'
 
+declare const ENV: Record<string, string>
+
+export const getAssetBase = () => ENV.PORTAL_ASSETS_URL ?? ''
+
 export const Footer = ({ pages }: { pages: string[] }) => {
   const { t } = useTranslation()
   const location = useLocation()
@@ -89,7 +93,7 @@ export const Footer = ({ pages }: { pages: string[] }) => {
       <img
         id="footer-head"
         className="footer-head"
-        src="/orange-background-head.svg"
+        src={`${getAssetBase()}/images/frame/orange-background-head.svg`}
         alt="orange background"
       />
       <div className="footer-content">

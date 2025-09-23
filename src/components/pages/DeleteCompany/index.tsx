@@ -95,7 +95,7 @@ export default function DeleteCompany() {
         <div
           className="deleteMain"
           style={{
-            backgroundImage: `url(${getAssetBase()}/images/frame/home-stage-desktop.png)`,
+            backgroundImage: `url(${getAssetBase()}/images/frame/home-stage-desktops.png)`,
           }}
         >
           <div className="container">
