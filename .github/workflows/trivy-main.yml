@@ -108,14 +108,8 @@ jobs:
 
       - name: Run Trivy on image
         run: |
-          trivy image \
-            --format sarif \
-            --output trivy-results2.sarif \
-            --severity CRITICAL,HIGH \
-            --exit-code 1 \
-            --skip-version-check \
-            --scanners vuln \
-            ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
+          trivy image --format sarif --output trivy-results2.sarif --severity CRITICAL,HIGH --exit-code 1 --skip-version-check \
+          ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
 
       ######## The old trivy-action approach is now commented out because it is outdated: ########
 
