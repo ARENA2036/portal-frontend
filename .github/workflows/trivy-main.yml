@@ -108,7 +108,6 @@ jobs:
 
       - name: Run Trivy on image
         run: |
-          trivy image --format sarif --output trivy-results2.sarif --skip-version-check \
           trivy image \
             --format sarif \
             --output trivy-results2.sarif \
