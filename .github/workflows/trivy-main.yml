@@ -38,8 +38,13 @@ on:
   # Trigger manually
 
 env:
-  IMAGE_NAMESPACE: 'tractusx'
+  # IMAGE_NAMESPACE: 'tractusx'
+  IMAGE_NAMESPACE: 'arena2036.azurecr.io'
   IMAGE_NAME: 'portal-frontend'
+  SERVER_URL: '${{ github.server_url }}'
+  REPOSITORY: '${{ github.repository }}'
+  REF_NAME: '${{ github.ref_name }}'
+
 
 jobs:
   analyze-config:
@@ -52,6 +57,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      
+      - name: Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Run Trivy vulnerability scanner in repo mode
         uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
@@ -82,6 +94,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
+      - name: Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+          
       # It's also possible to scan your private registry with Trivy's built-in image scan.
       # All you have to do is set ENV vars.
       # Docker Hub needs TRIVY_USERNAME and TRIVY_PASSWORD.
