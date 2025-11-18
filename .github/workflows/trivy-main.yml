@@ -99,6 +99,10 @@ jobs:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Pull image from ACR
+        run: |
+          docker pull ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest
           
       # Using the new setup-trivy action instead of the old trivy-action
       - name: Run Trivy vulnerability scanner
