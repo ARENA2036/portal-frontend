@@ -115,6 +115,7 @@ jobs:
             --output trivy-results2.sarif \
             --pkg-types os,library \
             --severity CRITICAL,HIGH \
+            --exit-code 1 \
             --skip-version-check \
             ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
 
@@ -142,6 +143,7 @@ jobs:
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
-        uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
+        # uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results2.sarif'
