@@ -100,11 +100,6 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       
-      # Pull the image you want to scan
-      - name: Pull ACR Image
-        run: |
-          docker pull ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
-
       # Using the new setup-trivy action instead of the old trivy-action
       - name: Run Trivy vulnerability scanner
         if: always()
