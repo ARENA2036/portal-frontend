@@ -100,21 +100,42 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
           
-      - name: Pull image from ACR
-        run: |
-          docker pull ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest
-
       # Using the new setup-trivy action instead of the old trivy-action
+      # - name: Run Trivy vulnerability scanner
+      #   if: always()
+      #   uses: aquasecurity/setup-trivy@v0.2.3
+      #   with:
+      #     version: 'v0.67.2'  # Install Trivy version 0.67.2
+      #     # Path to Docker image
+      #     image-ref: '${{ env.IMAGE_NAME }}:main'
+      #     format: 'sarif'
+      #     output: 'trivy-results2.sarif'
+      #     vuln-type: 'os,library'
+      #     severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
+      #     hide-progress: false
+      #     exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+      #     limit-severities-for-sarif: true
       - name: Run Trivy vulnerability scanner
-        if: always()
         uses: aquasecurity/setup-trivy@v0.2.3
         with:
-          version: 'v0.67.2'  # Install Trivy version 0.67.2
+          version: 'v0.67.2'
 
-      - name: Run Trivy on image
+      - name: Scan Docker image with Trivy
         run: |
-          trivy image --format sarif --output trivy-results2.sarif --skip-version-check \
-            ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest
+          trivy image \
+            --format sarif \
+            --output trivy-results2.sarif \
+            --vuln-type os,library \
+            --severity CRITICAL,HIGH \
+            --exit-code 1 \
+            --skip-version-check \
+            ${{ env.IMAGE_NAME }}:main
+
+      # - name: Run Trivy on image
+      #   run: |
+      #     trivy image --format sarif --output trivy-results2.sarif --skip-version-check \
+      #       ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest
+
 
       ######## The old trivy-action approach is now commented out because it is outdated: ########
 
