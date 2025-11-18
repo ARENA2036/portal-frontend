@@ -103,8 +103,7 @@ jobs:
       # Using the new setup-trivy action instead of the old trivy-action
       - name: Run Trivy vulnerability scanner
         if: always()
-        # uses: aquasecurity/setup-trivy@v0.2.3
-        uses: aquasecurity/setup-trivy@e6c2c5e321ed9123bda567646e2f96565e34abe1 # equivalent to `v0.2.4`
+        uses: aquasecurity/setup-trivy@v0.2.3
         with:
           version: 'v0.67.2'
 
