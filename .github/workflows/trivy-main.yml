@@ -44,6 +44,7 @@ env:
   SERVER_URL: '${{ github.server_url }}'    # GitHub server URL
   REPOSITORY: '${{ github.repository }}'    # Current repository
   REF_NAME: '${{ github.ref_name }}'        # Git reference (branch or tag) being used
+  
 jobs:
   analyze-config:
     runs-on: ubuntu-latest

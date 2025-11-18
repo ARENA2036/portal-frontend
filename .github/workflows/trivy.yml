@@ -38,9 +38,13 @@ on:
   # Trigger manually
 
 env:
-  IMAGE_NAMESPACE: 'tractusx'
+  # IMAGE_NAMESPACE: 'tractusx'             #  Original namespace, now commented
+  IMAGE_NAMESPACE: 'arena2036.azurecr.io'   # Current Azure Container Registry namespace
   IMAGE_NAME: 'portal-frontend'
-
+  SERVER_URL: '${{ github.server_url }}'    # GitHub server URL
+  REPOSITORY: '${{ github.repository }}'    # Current repository
+  REF_NAME: '${{ github.ref_name }}'        # Git reference (branch or tag) being used
+  
 jobs:
   analyze-config:
     runs-on: ubuntu-latest
@@ -52,6 +56,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    
+      - name: Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Run Trivy vulnerability scanner in repo mode
         uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
@@ -82,24 +93,45 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
+      - name: Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+          
+      # Using the new setup-trivy action instead of the old trivy-action
+      - name: Run Trivy vulnerability scanner
+        if: always()
+        uses: aquasecurity/setup-trivy@v0.2.3
+        with:
+          version: 'v0.67.2'  # Install Trivy version 0.67.2
+
+      - name: Run Trivy on image
+        run: |
+          trivy image --format sarif --output trivy-results2.sarif --skip-version-check \
+            ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
+
+      ######## The old trivy-action approach is now commented out because it is outdated: ########
+
       # It's also possible to scan your private registry with Trivy's built-in image scan.
       # All you have to do is set ENV vars.
       # Docker Hub needs TRIVY_USERNAME and TRIVY_PASSWORD.
       # You don't need to set ENV vars when downloading from a public repository.
       # For public images, no ENV vars must be set.
-      - name: Run Trivy vulnerability scanner
-        if: always()
-        uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
-        with:
-          # Path to Docker image
-          image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest'
-          format: 'sarif'
-          output: 'trivy-results2.sarif'
-          vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
-          hide-progress: false
-          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
-          limit-severities-for-sarif: true
+      # - name: Run Trivy vulnerability scanner
+      #   if: always()
+      #   uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
+      #   with:
+      #     # Path to Docker image
+      #     image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest'
+      #     format: 'sarif'
+      #     output: 'trivy-results2.sarif'
+      #     vuln-type: 'os,library'
+      #     severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
+      #     hide-progress: false
+      #     exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+      #     limit-severities-for-sarif: true
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
