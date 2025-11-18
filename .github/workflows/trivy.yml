@@ -100,6 +100,10 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
           
+      - name: Pull image from ACR
+        run: |
+          docker pull ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest
+
       # Using the new setup-trivy action instead of the old trivy-action
       - name: Run Trivy vulnerability scanner
         if: always()
@@ -110,7 +114,7 @@ jobs:
       - name: Run Trivy on image
         run: |
           trivy image --format sarif --output trivy-results2.sarif --skip-version-check \
-            ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest           
+            ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:latest          
 
       ######## The old trivy-action approach is now commented out because it is outdated: ########
 
