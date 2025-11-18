@@ -118,19 +118,6 @@ jobs:
             --skip-version-check \
             ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
 
-      # # Run Trivy scan on your Docker image
-      # - name: Scan Docker image with Trivy
-      #   run: |
-      #     trivy image \
-      #       --format sarif \
-      #       --output trivy-results2.sarif \
-      #       --pkg-types os,library \
-      #       --severity CRITICAL,HIGH \
-      #       --exit-code 1 \
-      #       --skip-version-check \
-      #       ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
-
-
       ######## The old trivy-action approach is now commented out because it is outdated: ########
 
       # It's also possible to scan your private registry with Trivy's built-in image scan.
