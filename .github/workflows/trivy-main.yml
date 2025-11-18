@@ -99,24 +99,26 @@ jobs:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
+      
+      # Pull the image you want to scan
+      - name: Pull ACR Image
+        run: |
+          docker pull ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:main
 
       # Using the new setup-trivy action instead of the old trivy-action
       - name: Run Trivy vulnerability scanner
         if: always()
-        uses: aquasecurity/setup-trivy@v0.2.3
+        uses: aquasecurity/trivy-action@master
         with:
-          version: 'v0.67.2'  # Install Trivy version 0.67.2
-
-      - name: Scan Docker image with Trivy
-        run: |
-          trivy image \
-            --format sarif \
-            --output trivy-results2.sarif \
-            --pkg-types os,library \
-            --severity CRITICAL,HIGH \
-            --exit-code 1 \
-            --skip-version-check \
-            ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
+          # Path to Docker image
+          image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:main'
+          format: 'sarif'
+          output: 'trivy-results2.sarif'
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
+          hide-progress: false
+          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          limit-severities-for-sarif: true
 
       ######## The old trivy-action approach is now commented out because it is outdated: ########
 
@@ -142,6 +144,7 @@ jobs:
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
-        uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
+        # uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results2.sarif'
