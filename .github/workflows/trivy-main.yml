@@ -65,7 +65,7 @@ jobs:
           password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Run Trivy vulnerability scanner in repo mode
-        uses: aquasecurity/trivy-action@0317097f59169a66937f3f5b95d7f8b7cee1b7eb # v0.32.0 to v0.33.1
+        uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
         with:
           scan-type: 'config'
           hide-progress: false
@@ -100,21 +100,21 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       
-      # # Using the new setup-trivy action instead of the old trivy-action
-      # - name: Run Trivy vulnerability scanner
-      #   if: always()
-      #   uses: aquasecurity/setup-trivy@v0.2.3
+      # Using the new setup-trivy action instead of the old trivy-action
+      - name: Run Trivy vulnerability scanner
+        if: always()
+        uses: aquasecurity/setup-trivy@v0.2.3
 
-      # - name: Run Trivy on image
-      #   run: |
-      #       trivy image \
-      #         --format sarif \
-      #         --output trivy-results2.sarif \
-      #         --pkg-types os,library \
-      #         --severity CRITICAL,HIGH \
-      #         --exit-code 1 \
-      #         --skip-version-check \
-      #         ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
+      - name: Run Trivy on image
+        run: |
+            trivy image \
+              --format sarif \
+              --output trivy-results2.sarif \
+              --pkg-types os,library \
+              --severity CRITICAL,HIGH \
+              --exit-code 1 \
+              --skip-version-check \
+              ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
           
 
       ######## The old trivy-action approach is now commented out because it is outdated: ########
@@ -125,19 +125,19 @@ jobs:
       # You don't need to set ENV vars when downloading from a public repository.
       # For public images, no ENV vars must be set.
 
-      - name: Run Trivy vulnerability scanner
-        if: always()
-        uses: aquasecurity/trivy-action@0317097f59169a66937f3f5b95d7f8b7cee1b7eb # v0.32.0 to v0.33.1
-        with:
-          # Path to Docker image
-          image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest'
-          format: 'sarif'
-          output: 'trivy-results2.sarif'
-          vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
-          hide-progress: false
-          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
-          limit-severities-for-sarif: true
+      # - name: Run Trivy vulnerability scanner
+      #   if: always()
+      #   uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # v0.32.0
+      #   with:
+      #     # Path to Docker image
+      #     image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:main'
+      #     format: 'sarif'
+      #     output: 'trivy-results2.sarif'
+      #     vuln-type: 'os,library'
+      #     severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
+      #     hide-progress: false
+      #     exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+      #     limit-severities-for-sarif: true
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
