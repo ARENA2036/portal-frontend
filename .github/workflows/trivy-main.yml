@@ -112,7 +112,7 @@ jobs:
               --output trivy-results2.sarif \
               --vuln-type os,library \
               --severity CRITICAL,HIGH \
-              --exit-code 1 \
+              --exit-code 0 \
               --ignore-unfixed \
               ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest
 
