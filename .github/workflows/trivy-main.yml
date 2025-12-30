@@ -99,25 +99,6 @@ jobs:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
-      
-      # # Using the new setup-trivy action instead of the old trivy-action
-      # - name: Run Trivy vulnerability scanner
-      #   uses: aquasecurity/setup-trivy@e6c2c5e321ed9123bda567646e2f96565e34abe1 # v5.0.0
-        
-      # - name: Run Trivy scan
-      #   if: always()
-      #   run: |
-      #       trivy image \
-      #         --scanners vuln \
-      #         --format sarif \
-      #         --output trivy-results2.sarif \
-      #         --pkg-types os,library \
-      #         --severity CRITICAL,HIGH \
-      #         --ignore-unfixed \
-      #         --exit-code 1 \
-      #         ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest301225
-
-      ######## The old trivy-action approach is now commented out because it is outdated: ########
 
       # It's also possible to scan your private registry with Trivy's built-in image scan.
       # All you have to do is set ENV vars.
