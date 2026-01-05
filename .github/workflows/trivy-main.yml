@@ -74,6 +74,7 @@ jobs:
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
           exit-code: '0' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          ignore-unfixed: true
           limit-severities-for-sarif: true
  
       - name: Upload Trivy scan results to GitHub Security tab
@@ -112,12 +113,13 @@ jobs:
         with:
           # Path to Docker image
           image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest'
-          format: 'sarif'
+          format: 'table'
           output: 'trivy-results2.sarif'
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
           hide-progress: false
-          exit-code: '0' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          ignore-unfixed: true
           limit-severities-for-sarif: true
 
       - name: Upload Trivy scan results to GitHub Security tab
