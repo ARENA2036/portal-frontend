@@ -113,7 +113,7 @@ jobs:
         with:
           # Path to Docker image
           image-ref: '${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest'
-          format: 'table'
+          format: 'sarif'
           output: 'trivy-results2.sarif'
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
