@@ -119,8 +119,7 @@ jobs:
           hide-progress: false
           exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           limit-severities-for-sarif: true
-          trivy-config: 'trivy.yaml'
-          skip-setup-trivy: true   # now valid because Trivy is already installed
+          skip-setup-trivy: true
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
