@@ -73,7 +73,7 @@ jobs:
           output: 'trivy-results1.sarif'
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
-          exit-code: '0' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           ignore-unfixed: true
           limit-severities-for-sarif: true
  
