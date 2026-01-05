@@ -75,9 +75,7 @@ jobs:
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
           exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           limit-severities-for-sarif: true
-          skip-setup-trivy: true
-      
-
+ 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
         if: always()
@@ -121,7 +119,8 @@ jobs:
           hide-progress: false
           exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           limit-severities-for-sarif: true
-          skip-setup-trivy: true
+          trivy-config: 'trivy.yaml'
+          skip-setup-trivy: true   # now valid because Trivy is already installed
 
       - name: Upload Trivy scan results to GitHub Security tab
         if: always()
