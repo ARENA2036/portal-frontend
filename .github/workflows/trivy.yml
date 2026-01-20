@@ -58,7 +58,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
     
       - name: Docker Login
-        uses: azure/docker-login@v1
+        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # 2.0
         with:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
@@ -73,7 +73,7 @@ jobs:
           output: 'trivy-results1.sarif'
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
-          exit-code: '0' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           limit-severities-for-sarif: true
 
       - name: Upload Trivy scan results to GitHub Security tab
@@ -94,7 +94,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Docker Login
-        uses: azure/docker-login@v1
+        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # 2.0
         with:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
@@ -116,7 +116,7 @@ jobs:
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH' # While vulnerabilities of all severities are reported in the SARIF output, the exit code and workflow failure are triggered only by these specified severities (CRITICAL or HIGH).
           hide-progress: false
-          exit-code: '0' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
+          exit-code: '1' # Trivy exits with code 1 if vulnerabilities are found, causing the workflow step to fail.
           limit-severities-for-sarif: true
 
       - name: Upload Trivy scan results to GitHub Security tab
