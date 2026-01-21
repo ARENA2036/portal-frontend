@@ -105,6 +105,10 @@ jobs:
       # Docker Hub needs TRIVY_USERNAME and TRIVY_PASSWORD.
       # You don't need to set ENV vars when downloading from a public repository.
       # For public images, no ENV vars must be set.
+      
+      - name: Build fresh portal-frontend image
+        run: |
+          docker build --pull --no-cache -t ${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_NAME }}:latest210126 .
 
       - name: Run Trivy vulnerability scanner
         if: always()
