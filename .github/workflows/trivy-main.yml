@@ -1,5 +1,6 @@
 ###############################################################
 # Copyright (c) 2022 Contributors to the Eclipse Foundation
+# Copyright (c) 2026 ARENA2036 e.V
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -58,7 +59,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       
       - name: Docker Login
-        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # 2.0
+        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # v2.0
         with:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
@@ -94,7 +95,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Docker Login
-        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # 2.0
+        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5 # v2.0
         with:
           login-server: ${{ secrets.AZURE_URL }}
           username: ${{ secrets.ACR_USERNAME }}
