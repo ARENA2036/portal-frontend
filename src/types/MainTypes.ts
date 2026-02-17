@@ -21,7 +21,7 @@
 import type {
   PageNotificationsProps,
   PaginMeta,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import type { ErrorServiceState } from 'features/error/types'
 
 export type Nullable<T> = T | null
@@ -150,7 +150,7 @@ export const initErrorServiceState: ErrorServiceState = {
 
 export const IMAGE_TYPES: Record<string, string> = {
   '3c': 'image/svg+xml',
-  ffd8ff: 'image/jpeg',
+  ffd8ff: 'AccessVsUsage',
   '89504e': 'image/png',
   474946: 'image/gif',
 }

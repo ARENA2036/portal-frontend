@@ -23,7 +23,7 @@ import {
   Typography,
   OrderStatusButton,
   paletteDefinitions,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useTranslation } from 'react-i18next'
 import type { AppDetails } from 'features/apps/details/types'
 import './style.scss'

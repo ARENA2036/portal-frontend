@@ -23,7 +23,7 @@ import {
   Typography,
   StaticTable,
   type TableType,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import type { AppDetails } from 'features/apps/types'
 import './style.scss'
 import { Box } from '@mui/material'

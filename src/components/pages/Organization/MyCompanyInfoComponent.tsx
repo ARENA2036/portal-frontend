@@ -1,7 +1,7 @@
 import {
   StatusTag,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { Box } from '@mui/material'
 import { KeyValueView } from 'components/shared/basic/KeyValueView'
 import { useFetchOwnCompanyDetailsQuery } from 'features/admin/userApiSlice'

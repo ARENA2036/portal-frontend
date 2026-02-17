@@ -22,7 +22,7 @@ import { initServicetNotifications } from 'types/MainTypes'
 import type {
   PageNotificationsProps,
   PaginMeta,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 
 export const name = 'info/notification'
 

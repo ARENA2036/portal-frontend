@@ -24,7 +24,7 @@ import {
   DialogContent,
   DialogHeader,
   Input,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import {
   deleteUserBpn,
   fetchAny,

@@ -26,7 +26,7 @@ import {
   DialogHeader,
   DialogActions,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import RegistrationReviewContent from './RegistrationReviewContent'
 import './RegistrationReview.scss'
 

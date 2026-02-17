@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { useEffect, useState } from 'react'
-import { Typography } from '@arena2036/portal-shared-components-arena-x'
+import { Typography } from '@arena2036/portal-shared-components-redrives'
 import { useTranslation } from 'react-i18next'
 import type { AppDetails } from 'features/apps/details/types'
 import { useFetchDocumentByIdMutation } from 'features/apps/apiSlice'

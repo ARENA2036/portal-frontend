@@ -20,7 +20,10 @@
 
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import { OVERLAYS } from 'types/Constants'
-import { Button, Typography } from '@arena2036/portal-shared-components-arena-x'
+import {
+  Button,
+  Typography,
+} from '@arena2036/portal-shared-components-redrives'
 import { Trans, useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { IDPList } from './IDPList'

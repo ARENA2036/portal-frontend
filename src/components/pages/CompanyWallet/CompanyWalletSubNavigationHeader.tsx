@@ -18,7 +18,10 @@
  ********************************************************************************/
 
 import { useTranslation } from 'react-i18next'
-import { Typography, Button } from '@arena2036/portal-shared-components-arena-x'
+import {
+  Typography,
+  Button,
+} from '@arena2036/portal-shared-components-redrives'
 import './style.scss'
 import EastIcon from '@mui/icons-material/East'
 import { useNavigate } from 'react-router'

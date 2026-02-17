@@ -20,7 +20,10 @@
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery, useTheme } from '@mui/material'
 import { Trans, useTranslation } from 'react-i18next'
-import { Button, Typography } from '@arena2036/portal-shared-components-arena-x'
+import {
+  Button,
+  Typography,
+} from '@arena2036/portal-shared-components-redrives'
 import RegistrationStatusList from 'components/shared/frame/Header/RegistrationReviewOverlay/RegistrationReviewContent/RegistrationStatusList'
 import { type ApplicationResponse } from 'features/registration/registrationApiSlice'
 

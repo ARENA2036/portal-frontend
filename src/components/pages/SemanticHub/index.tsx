@@ -23,7 +23,7 @@ import {
   PageHeader2,
   PageSnackbar,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Box, Grid } from '@mui/material'

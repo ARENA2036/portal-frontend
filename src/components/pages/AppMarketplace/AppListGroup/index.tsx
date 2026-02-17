@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 import {
   Cards,
   CategoryDivider,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { fetchImageWithToken } from 'services/ImageService'
 import type { AppMarketplaceCard } from 'features/apps/types'
 

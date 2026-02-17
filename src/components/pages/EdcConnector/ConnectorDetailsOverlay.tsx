@@ -29,7 +29,7 @@ import {
   CircleProgress,
   LoadingButton,
   IconButton,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import {
   type ConnectorDetailsType,
   useUpdateConnectorUrlMutation,

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { MainHeader } from '@arena2036/portal-shared-components-arena-x'
+import { MainHeader } from '@arena2036/portal-shared-components-redrives'
 import { getAssetBase } from 'services/EnvironmentService'
 import { useMediaQuery, useTheme } from '@mui/material'
 
@@ -42,7 +42,7 @@ export default function SearchSection({
         headerHeight={551}
         subTitleWidth={isMobile ? '100%' : 800}
         background="LinearGradient1"
-        imagePath={`${getAssetBase()}/images/content/company-roles.png`}
+        imagePath={`${getAssetBase()}/images/frame/Frame.png`}
       />
     </div>
   )

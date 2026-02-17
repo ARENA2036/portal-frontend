@@ -28,7 +28,7 @@ import {
   Input,
   theme,
   CircleProgress,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { usePostSemanticModelMutation } from 'features/semanticModels/apiSlice'

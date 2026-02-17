@@ -31,7 +31,7 @@ import {
   CustomAccordion,
   MainNavigation,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import type { MenuItem, Tree } from 'types/MainTypes'
 import { getAssetBase } from 'services/EnvironmentService'
 import {
@@ -212,7 +212,7 @@ export const Header = ({
       <div className="mobileNav">
         <div className="mobileHeader">
           <img
-            src={`${getAssetBase()}/images/logos/arena-x-logo.png`}
+            src={`${getAssetBase()}/images/logos/logo-text.png`}
             alt="logo"
             style={{ width: '100px' }}
           />

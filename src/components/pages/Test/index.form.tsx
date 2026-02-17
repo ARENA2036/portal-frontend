@@ -20,7 +20,7 @@
 
 import ValidatingInput from 'components/shared/basic/Input/ValidatingInput'
 import BasicInput, { InputType } from 'components/shared/basic/Input/BasicInput'
-import { Button, Checkbox } from '@arena2036/portal-shared-components-arena-x'
+import { Button, Checkbox } from '@arena2036/portal-shared-components-redrives'
 import { useState } from 'react'
 import { isMail } from 'types/Patterns'
 

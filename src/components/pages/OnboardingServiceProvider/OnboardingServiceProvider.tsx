@@ -32,7 +32,7 @@ import {
   DialogContent,
   Dialog,
   LoadingButton,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { Box } from '@mui/material'
 import './style.scss'

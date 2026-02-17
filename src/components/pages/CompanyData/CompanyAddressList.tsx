@@ -21,7 +21,7 @@ import {
   Chip,
   IconButton,
   Table,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Box } from '@mui/material'

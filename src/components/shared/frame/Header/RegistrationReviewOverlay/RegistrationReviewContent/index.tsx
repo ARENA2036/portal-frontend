@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { Trans, useTranslation } from 'react-i18next'
-import { Typography } from '@arena2036/portal-shared-components-arena-x'
+import { Typography } from '@arena2036/portal-shared-components-redrives'
 import {
   type ApplicationChecklist,
   useFetchApplicationsQuery,

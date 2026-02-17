@@ -26,7 +26,7 @@ import {
   DialogHeader,
   Stepper,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { closeOverlay } from 'features/control/overlay'
 import { useDispatch } from 'react-redux'
 

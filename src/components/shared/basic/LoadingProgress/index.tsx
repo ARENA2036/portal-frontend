@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { CircleProgress } from '@arena2036/portal-shared-components-arena-x'
+import { CircleProgress } from '@arena2036/portal-shared-components-redrives'
 
 export default function LoadingProgress() {
   return (

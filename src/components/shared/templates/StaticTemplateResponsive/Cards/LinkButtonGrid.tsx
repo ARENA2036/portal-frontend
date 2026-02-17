@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { QuickLinks } from '@arena2036/portal-shared-components-arena-x'
+import { QuickLinks } from '@arena2036/portal-shared-components-redrives'
 import type { ProviderProps } from '../StaticTypes'
 import '../style.scss'
 

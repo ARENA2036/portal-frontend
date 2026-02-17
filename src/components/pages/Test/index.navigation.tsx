@@ -21,7 +21,7 @@
 import {
   Logo,
   MainNavigation,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useNavigate } from 'react-router-dom'
 
 function NavigationTest() {

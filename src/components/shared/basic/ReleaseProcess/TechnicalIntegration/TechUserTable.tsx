@@ -18,7 +18,7 @@
  ********************************************************************************/
 
 import { t } from 'i18next'
-import { Table, Tooltips } from '@arena2036/portal-shared-components-arena-x'
+import { Table, Tooltips } from '@arena2036/portal-shared-components-redrives'
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import { Box } from '@mui/material'

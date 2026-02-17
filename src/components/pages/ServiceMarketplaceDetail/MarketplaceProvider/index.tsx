@@ -23,7 +23,7 @@ import {
   Typography,
   StaticTable,
   type TableType,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import type { ServiceRequest } from 'features/serviceMarketplace/serviceApiSlice'
 import './style.scss'
 

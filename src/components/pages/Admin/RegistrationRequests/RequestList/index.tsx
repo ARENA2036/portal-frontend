@@ -21,7 +21,7 @@
 import {
   PageLoadingTable,
   type PaginFetchArgs,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from 'react'

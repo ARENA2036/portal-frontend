@@ -22,7 +22,7 @@ import {
   type CardItems,
   type ImageType,
   LogoGrayData,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import type { ProvidedServiceType } from 'features/serviceManagement/apiSlice'
 import { getApiBase, getAssetBase } from 'services/EnvironmentService'
 import {

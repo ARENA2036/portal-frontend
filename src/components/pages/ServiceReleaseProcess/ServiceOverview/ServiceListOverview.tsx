@@ -30,7 +30,7 @@ import {
   PageSnackbar,
   ErrorBar,
   CircleProgress,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { serviceToCard } from 'features/apps/mapper'
 import { fetchImageWithToken } from 'services/ImageService'
 import {

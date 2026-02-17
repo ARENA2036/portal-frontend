@@ -22,7 +22,7 @@ import { useMediaQuery, useTheme } from '@mui/material'
 import {
   Typography,
   StatusTag,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import LoopIcon from '@mui/icons-material/Loop'
 import PendingActionsIcon from '@mui/icons-material/PendingActions'

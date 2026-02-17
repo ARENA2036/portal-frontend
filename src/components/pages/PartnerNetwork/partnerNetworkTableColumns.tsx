@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import type { GridColDef } from '@mui/x-data-grid'
-import { IconButton } from '@arena2036/portal-shared-components-arena-x'
+import { IconButton } from '@arena2036/portal-shared-components-redrives'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import type { BusinessPartner } from 'features/newPartnerNetwork/types'
 import { OVERLAYS } from 'types/Constants'
@@ -56,8 +56,8 @@ export const PartnerNetworksTableColumns = (
       renderCell: (params) =>
         params?.row?.member ? (
           <img
-            src="/logo.svg"
-            alt="ARENA2036-X logo"
+            src="/logo.png"
+            alt="ReDriveS logo"
             style={{
               width: 40,
             }}

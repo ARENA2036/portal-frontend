@@ -21,7 +21,7 @@
 import {
   PageHeader,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useTranslation } from 'react-i18next'
 
 export default function Imprint() {

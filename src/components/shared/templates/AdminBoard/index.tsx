@@ -29,7 +29,7 @@ import {
   PageHeader2,
   LoadMoreButton,
   CircleProgress,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import './style.scss'
 import AdminBoardElements from './AdminBoardElements'
 import { currentSuccessType } from 'features/adminBoard/slice'

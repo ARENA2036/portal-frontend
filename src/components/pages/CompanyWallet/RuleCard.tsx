@@ -20,7 +20,7 @@
 import {
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import './style.scss'
 import {
   CredentialSubjectStatus,
@@ -137,8 +137,8 @@ export default function RuleCard({
                         {getStatus(item?.status)}
                       </Typography>
                       <img
-                        src={`${getAssetBase()}/images/logos/logo_tractus-x.svg`}
-                        alt="tractus x logo"
+                        src={`${getAssetBase()}/images/logos/logo.png`}
+                        alt="ReDriveS logo"
                         style={{
                           width: 40,
                         }}

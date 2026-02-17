@@ -26,7 +26,7 @@ import {
   DialogActions,
   DialogHeader,
   LoadingButton,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useDispatch } from 'react-redux'
 import { closeOverlay } from 'features/control/overlay'
 import { useDeleteCompanyCertificateMutation } from 'features/companyCertification/companyCertificateApiSlice'

@@ -21,7 +21,7 @@
 import {
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useEffect, useRef, useState } from 'react'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'

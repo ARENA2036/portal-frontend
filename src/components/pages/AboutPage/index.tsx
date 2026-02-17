@@ -20,7 +20,7 @@
 import {
   AboutCard,
   PageHeader,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import legalJson from '../../../assets/notice/legal-notice.json'
 import { useTranslation } from 'react-i18next'
 

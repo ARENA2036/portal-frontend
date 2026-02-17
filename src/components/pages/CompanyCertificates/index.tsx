@@ -23,7 +23,7 @@ import {
   ViewSelector,
   SortOption,
   Button,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import SortImage from 'components/shared/frame/SortImage'
 import './style.scss'
 import { ROLES } from 'types/Constants'

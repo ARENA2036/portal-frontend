@@ -21,7 +21,7 @@
 import {
   DialogContent,
   DialogHeader,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { fetchAny } from 'features/admin/userOwn/actions'
 import { UserdetailSelector } from 'features/admin/userOwn/slice'
 import { show } from 'features/control/overlay'

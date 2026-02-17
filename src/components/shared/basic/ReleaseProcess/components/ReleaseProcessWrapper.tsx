@@ -21,9 +21,9 @@
 import {
   Button,
   MainHeader,
-  PageHeader,
+  PageHeader2,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useCallback, useEffect, useState } from 'react'
 import '../ReleaseProcessSteps.scss'
 import ReleaseStepper, {
@@ -133,7 +133,7 @@ export default function ReleaseProcessWrapper({
         </MainHeader>
       ) : (
         <>
-          <PageHeader
+          <PageHeader2
             title={pageHeaderTitle}
             topPage={true}
             headerHeight={200}

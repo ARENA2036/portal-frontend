@@ -18,7 +18,7 @@
  ********************************************************************************/
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import type { CardItems } from '@arena2036/portal-shared-components-arena-x'
+import type { CardItems } from '@arena2036/portal-shared-components-redrives'
 import { getAssetBase } from 'services/EnvironmentService'
 
 export const apiSlice = createApi({

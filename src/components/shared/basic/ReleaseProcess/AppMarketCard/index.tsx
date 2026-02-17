@@ -28,7 +28,7 @@ import {
   type UploadFileStatus,
   UploadStatus,
   PageSnackbar,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { useTranslation } from 'react-i18next'
 import { Grid } from '@mui/material'
 import { useState, useEffect, useMemo, useRef } from 'react'

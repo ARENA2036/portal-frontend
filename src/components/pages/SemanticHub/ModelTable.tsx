@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Table } from '@arena2036/portal-shared-components-arena-x'
+import { Table } from '@arena2036/portal-shared-components-redrives'
 import {
   useDeleteModelByIdMutation,
   useGetModelsQuery,

@@ -22,7 +22,7 @@ import { Box, useMediaQuery, useTheme } from '@mui/material'
 import {
   ImageGallery,
   Typography,
-} from '@arena2036/portal-shared-components-arena-x'
+} from '@arena2036/portal-shared-components-redrives'
 import { type AppDetails } from 'features/apps/types'
 import CommonService from 'services/CommonService'
 import { type ServiceDetailsResponse } from 'features/serviceSubscription/serviceSubscriptionApiSlice'

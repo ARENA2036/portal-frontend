@@ -22,12 +22,19 @@ footer {
   margin-top: auto;
   position: relative;
   overflow: hidden;
+
   .footer-head {
     margin-bottom: -7px;
+
     @media screen and (min-width: 1400px) {
       width: 100%;
     }
   }
+
+  .copyright {
+    color: white;
+  }
+
   .footer-content {
     display: relative;
     min-height: 200px;
@@ -36,9 +43,11 @@ footer {
     background-image: url(../../../../../public/orange-background-full.svg);
     background-size: cover;
     background-repeat: no-repeat;
+
     @media screen and (min-width: 1400px) {
       background-size: cover;
     }
+
     nav {
       margin-left: auto;
       margin-right: auto;
@@ -47,9 +56,18 @@ footer {
       justify-content: center;
       margin-bottom: 16px;
       padding-top: 75px;
+
       a.MuiTypography-root {
+        color: white;
+        text-decoration: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+      }
+
+      a.MuiTypography-root:hover {
+        background-color: white;
         color: black;
-        text-decoration: underline;
       }
     }
   }

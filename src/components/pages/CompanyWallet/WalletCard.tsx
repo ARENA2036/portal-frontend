@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Typography } from '@arena2036/portal-shared-components-arena-x'
+import { Typography } from '@arena2036/portal-shared-components-redrives'
 import {
   CredentialSubjectStatus,
   type WalletContent,
@@ -98,8 +98,8 @@ export default function WalletCard({
             <div className="icon">
               <img
                 id="wallet-logo"
-                src="/arena-x-logo-transparent.svg"
-                alt="ARENA2036-X Logo"
+                src="/logo.png"
+                alt="ReDriveS Logo"
                 style={{ display: 'inline', width: '100px', height: '80px' }}
               />
             </div>
