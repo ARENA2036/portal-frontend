@@ -34,10 +34,10 @@ export const Logo = () => (
     <Image
       src={`${getAssetBase()}/images/logos/logo-text-no-bg.png`}
       style={{
-        height: '150px',
+        height: '200px',
         width: 'auto',
         display: 'block',
-        marginLeft: '50px',
+        marginLeft: '0px',
       }}
     />
   </NavLink>
