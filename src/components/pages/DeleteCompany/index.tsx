@@ -101,7 +101,7 @@ export default function DeleteCompany() {
           <div className="container">
             <div className="logo text-center">
               <img
-                src={`${getAssetBase()}/images/logos/logo-text.png`}
+                src={`${getAssetBase()}/images/logos/logo-text-no-bg.png`}
                 alt="logo"
               />
             </div>

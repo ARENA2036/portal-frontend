@@ -101,7 +101,7 @@ export const Footer = ({ pages }: { pages: string[] }) => {
           id="footer-logo"
           src="/BMWE.png"
           alt="BMWE 2025 Next Gen EU"
-          style={{ display: 'inline', width: '350px', marginTop: '20px' }}
+          style={{ display: 'inline', width: '250px', marginTop: '50px' }}
         />
         <Navigation unstyled items={items} component={NavLink} />
         <span className="copyright">{`${t('content.footer.copyright')}`}</span>

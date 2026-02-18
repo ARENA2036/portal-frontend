@@ -212,7 +212,7 @@ export const Header = ({
       <div className="mobileNav">
         <div className="mobileHeader">
           <img
-            src={`${getAssetBase()}/images/logos/logo-text.png`}
+            src={`${getAssetBase()}/images/logos/logo-text-no-bg.png`}
             alt="logo"
             style={{ width: '100px' }}
           />
