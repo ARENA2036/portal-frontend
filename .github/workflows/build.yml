@@ -25,6 +25,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'feature/redrives'
   workflow_dispatch:
     inputs:
       image_tag:
@@ -32,7 +33,7 @@ on:
         required: true
         default: 'latest'
 env:
-  IMAGE_NAMESPACE: 'arena2036.azurecr.io'
+  IMAGE_NAMESPACE: 'harbor-hub-shared.arena.3ascloud.de/redrives'
   IMAGE_NAME: 'portal-frontend'
   # variables needed for scripts/legal-notice.sh
   SERVER_URL: '${{ github.server_url }}'
@@ -78,9 +79,9 @@ jobs:
       - name: Docker Login
         uses: azure/docker-login@v1
         with:
-          login-server: ${{ secrets.AZURE_URL }}
-          username: ${{ secrets.ACR_USERNAME }}
-          password: ${{ secrets.ACR_PASSWORD }}
+          login-server: ${{ secrets.HBR_REGISTRY }}
+          username: ${{ secrets.HBR_USERNAME }}
+          password: ${{ secrets.HBR_PASSWORD }}
 
       - name: Docker meta
         id: meta
