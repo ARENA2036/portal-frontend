@@ -930,7 +930,7 @@
   - updated "mandatory"/"required" icon (asterisk) color from black to red
 - Static Pages Updated
   - Data Space
-  - Catena-X Participant
+  - ARENA2036-X Participant
 
 ### Feature
 

@@ -112,7 +112,7 @@ export default function ServiceReleaseProcessForm() {
       headerTitle={t('submit.headerTitle')}
       headerDescription={t('submit.headerDescription')}
       headerDescriptionComplete={t('submit.headerDescriptionComplete')}
-      yourCatenaXTeam={t('submit.yourCatenaXTeam')}
+      yourArenaXTeam={t('submit.yourArenaXTeam')}
       myAppsOverview={t('submit.overview')}
     />
   )

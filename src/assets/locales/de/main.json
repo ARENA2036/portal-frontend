@@ -664,8 +664,8 @@
       "headertitle": "Connector Registration",
       "desc": "The connector combines the benefits of IDS connectors (secure and standardized communication, data usage control) with the interoperability. To register your connector inside the network and create your connector self-description, please register your connector below.",
       "subDesc1": "Connector Configuration Details",
-      "subDesc2": "https://bpnl00000003crhk-catena-x.authentication.eu10.hana.ondemand.com/oauth/token",
-      "subDesc3": "https://dis-integration-service-prod.eu10.dim.cloud.sap/api/v2.0.0/iatp/catena-x-portal",
+      "subDesc2": "https://bpnl00000003crhk-arena2036-x.authentication.eu10.hana.ondemand.com/oauth/token",
+      "subDesc3": "https://dis-integration-service-prod.eu10.dim.cloud.sap/api/v2.0.0/iatp/arena2036-x-portal",
       "subDesc4": "Did:web:xxxxxxxxx",
       "subheadertitle": "Connector",
       "tabletitle": "Owned Connectors",
@@ -1386,7 +1386,7 @@
         "headerTitle": "App erfolgreich eingereicht!",
         "headerDescription": "After a review by a ARENA2036-X administrator, you will receive",
         "headerDescriptionComplete": "further information on app release",
-        "yourCatenaXTeam": "Dein ARENA2036-X team",
+        "yourArenaXTeam": "Dein ARENA2036-X team",
         "overview": "My apps overview"
       },
       "defaultValues": {

@@ -51,8 +51,7 @@ This project uses the following font:
 
 This project uses the following image content:
 
-- Image: Catena-X Logo
-- Source URL: https://catena-x.net
+- Image: ARENA2036-X Logo
 
 ## Cryptography
 
