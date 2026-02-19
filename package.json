@@ -1,8 +1,8 @@
 {
-  "name": "@catena-x/portal-frontend",
+  "name": "@redrives/portal-frontend",
   "version": "v2.4.0",
   "description": "ReDriveS Portal Frontend",
-  "author": "Catena-X Contributors",
+  "author": "ReDriveS-X Contributors",
   "license": "Apache-2.0",
   "type": "module",
   "repository": {
@@ -34,8 +34,6 @@
     ]
   },
   "dependencies": {
-    "@arena2036/portal-shared-components-arena-x": "^0.0.6",
-    "@arena2036/portal-shared-components-construct-x": "^0.0.55",
     "@arena2036/portal-shared-components-redrives": "^0.0.4",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",

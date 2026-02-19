@@ -78,7 +78,7 @@ export const StandardLibrariesTableColumns = (
       renderCell: ({ row }: { row: StdRows }) => (
         <IconButton color="secondary" size="small">
           <a
-            href={`https://catena-x.net/${row.download}`}
+            href={`https://redrives.net/${row.download}`}
             target="_blank"
             rel="noreferrer"
           >
