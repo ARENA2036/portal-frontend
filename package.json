@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "@arena2036/portal-shared-components-redrives": "^0.0.4",
+    "@arena2036/portal-shared-components-redrives": "^0.0.6",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@hookform/error-message": "^2.0.1",
