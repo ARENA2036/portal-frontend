@@ -24,7 +24,7 @@ import {
   UserAvatar,
   Typography,
   PageHeader,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import Accordion from '@mui/material/Accordion'
@@ -39,6 +39,8 @@ import { OVERLAYS } from 'types/Constants'
 import { show } from 'features/control/overlay'
 import { success } from 'services/NotifyService'
 import UserService from 'services/UserService'
+import { getAssetBase } from 'services/EnvironmentService'
+import './style.scss'
 
 export default function MyAccount() {
   const { t } = useTranslation()
@@ -50,11 +52,15 @@ export default function MyAccount() {
 
   return (
     <main className="my-account">
-      <PageHeader
-        title={t('pages.account')}
-        topPage={false}
-        headerHeight={200}
-      />
+      <div className="my-account-header">
+        <PageHeader
+          title={t('pages.account')}
+          topPage={false}
+          headerHeight={200}
+          background="Image"
+          imagePath={`${getAssetBase()}/images/frame/Frame.png`}
+        />
+      </div>
 
       <section>
         <Box

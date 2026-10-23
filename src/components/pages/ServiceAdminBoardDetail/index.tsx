@@ -22,7 +22,7 @@ import {
   Button,
   StaticTable,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useNavigate, useParams } from 'react-router-dom'
 import '../AdminBoardDetail/style.scss'
 import { getAssetBase } from 'services/EnvironmentService'

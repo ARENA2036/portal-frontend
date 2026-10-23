@@ -29,7 +29,7 @@ import {
   Input,
   LoadingButton,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import debounce from 'lodash.debounce'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

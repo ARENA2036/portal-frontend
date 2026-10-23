@@ -47,6 +47,12 @@
     }
   }
 
+  /* white text on the dark marketplace stage image (title, subtitle, "My Favorites"),
+     but keep the app cards inside the favourites carousel unchanged */
+  .stage-app-store .MuiTypography-root:not(.cx-card *) {
+    color: #ffffff;
+  }
+
   .favorite-section-title {
     h3 {
       margin-bottom: 48px !important;

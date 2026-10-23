@@ -23,7 +23,7 @@ import {
   MainHeader,
   PageHeader2,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useCallback, useEffect, useState } from 'react'
 import '../ReleaseProcessSteps.scss'
 import ReleaseStepper, {

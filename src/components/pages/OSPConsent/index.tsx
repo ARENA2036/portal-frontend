@@ -20,7 +20,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useMediaQuery, useTheme } from '@mui/material'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import {
   useFetchApplicationsQuery,
   useFetchAgreementConsentsQuery,

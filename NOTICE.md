@@ -51,7 +51,7 @@ This project uses the following font:
 
 This project uses the following image content:
 
-- Image: ReDriveS Logo
+- Image: Furniture-X Logo
 
 ## Cryptography
 

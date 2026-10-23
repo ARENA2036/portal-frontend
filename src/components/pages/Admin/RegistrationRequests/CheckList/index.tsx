@@ -22,7 +22,7 @@ import Box from '@mui/material/Box'
 import {
   Typography,
   Button,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import ReportProblemIcon from '@mui/icons-material/ReportProblem'
 import LoopIcon from '@mui/icons-material/Loop'

@@ -25,7 +25,7 @@ import {
   Button,
   Stepper,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 import { AppRoles } from './AppRoles'

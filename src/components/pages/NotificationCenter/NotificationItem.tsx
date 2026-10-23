@@ -38,7 +38,7 @@ import './style.scss'
 import {
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import LabelImportantIcon from '@mui/icons-material/LabelImportant'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import CloseIcon from '@mui/icons-material/Close'

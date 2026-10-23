@@ -21,7 +21,7 @@
 import type {
   PageNotificationsProps,
   PaginMeta,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import type { ErrorServiceState } from 'features/error/types'
 
 export type Nullable<T> = T | null

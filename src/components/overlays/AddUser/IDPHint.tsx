@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { useTranslation } from 'react-i18next'
-import { Input } from '@arena2036/portal-shared-components-redrives'
+import { Input } from '@arena2036/portal-shared-components-furniture-x'
 import type { IdentityProvider } from 'features/admin/idpApiSlice'
 
 export const IDPHint = ({ idp }: { idp: IdentityProvider }) => {

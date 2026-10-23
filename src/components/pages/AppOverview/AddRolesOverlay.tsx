@@ -29,7 +29,7 @@ import {
   StaticTable,
   type TableType,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { PAGES } from 'types/Constants'
 import { Box, Grid } from '@mui/material'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'

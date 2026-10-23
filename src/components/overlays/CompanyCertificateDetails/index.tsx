@@ -25,7 +25,7 @@ import {
   DialogActions,
   DialogContent,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { closeOverlay, show } from 'features/control/overlay'
 import './style.scss'
 import {

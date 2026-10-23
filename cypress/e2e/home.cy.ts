@@ -25,6 +25,6 @@ describe('Validate authentication for home page', () => {
   it('should visit home page after login', () => {
     cy.visit(Cypress.env('baseUrl'))
       .get('.copyright')
-      .should('have.text', 'Copyright © ReDriveS Network')
+      .should('have.text', 'Copyright © Furniture-X')
   })
 })

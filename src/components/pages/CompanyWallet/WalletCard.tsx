@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import {
   CredentialSubjectStatus,
   type WalletContent,
@@ -99,7 +99,7 @@ export default function WalletCard({
               <img
                 id="wallet-logo"
                 src="/logo.png"
-                alt="ReDriveS Logo"
+                alt="Furniture-X Logo"
                 style={{ display: 'inline', width: '100px', height: '80px' }}
               />
             </div>

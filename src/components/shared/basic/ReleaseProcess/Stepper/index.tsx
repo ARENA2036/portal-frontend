@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Stepper } from '@arena2036/portal-shared-components-redrives'
+import { Stepper } from '@arena2036/portal-shared-components-furniture-x'
 
 export interface StepType {
   headline: string

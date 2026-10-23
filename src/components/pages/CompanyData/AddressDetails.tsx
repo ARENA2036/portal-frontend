@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 import {
   Button,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { companyDataSelector } from 'features/companyData/slice'
 import { useSelector } from 'react-redux'
 

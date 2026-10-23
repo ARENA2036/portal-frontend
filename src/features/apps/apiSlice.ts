@@ -22,7 +22,7 @@ import {
   LogoGrayData,
   type PaginFetchArgs,
   type PaginResult,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import i18next from 'i18next'
 import { getApiBase } from 'services/EnvironmentService'
 import { apiBaseQuery } from 'utils/rtkUtil'

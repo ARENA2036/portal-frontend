@@ -29,7 +29,7 @@ import {
   Button,
   DialogActions,
   CircleProgress,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { semanticModelsSelector } from 'features/semanticModels/slice'
 import { useSelector } from 'react-redux'
 import {

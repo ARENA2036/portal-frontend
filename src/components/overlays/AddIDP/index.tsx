@@ -29,7 +29,7 @@ import {
   Stepper,
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useDispatch, useSelector } from 'react-redux'
 import { closeOverlay, show } from 'features/control/overlay'
 import { useState } from 'react'

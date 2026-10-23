@@ -25,7 +25,7 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 import {
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import type { IdentityProvider } from 'features/admin/idpApiSlice'
 import './style.scss'
 

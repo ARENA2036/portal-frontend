@@ -32,7 +32,7 @@ import {
   Tabs,
   Tab,
   TabPanel,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import AddConnectorOverlay from './AddConnectorOverlay'
 import type { FormFieldsType } from 'components/pages/EdcConnector/AddConnectorOverlay'
 import './style.scss'

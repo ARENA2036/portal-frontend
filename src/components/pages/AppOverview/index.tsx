@@ -31,7 +31,7 @@ import {
   ErrorBar,
   CircleProgress,
   LoadMoreButton,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTheme, Box } from '@mui/material'
 import {
   appCardStatus,

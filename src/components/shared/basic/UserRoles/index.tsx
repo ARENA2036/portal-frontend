@@ -25,7 +25,7 @@ import {
   Chip,
   PageSnackbar,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { uniqueId } from 'lodash'
 import EditIcon from '@mui/icons-material/Edit'

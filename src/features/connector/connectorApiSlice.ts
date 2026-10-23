@@ -23,7 +23,7 @@ import { apiBaseQuery } from 'utils/rtkUtil'
 import type {
   PaginFetchArgs,
   PaginResult,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 
 export enum ConnectType {
   MANAGED_CONNECTOR = 'MANAGED_CONNECTOR',

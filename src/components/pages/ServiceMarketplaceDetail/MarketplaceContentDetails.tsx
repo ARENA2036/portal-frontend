@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import MarketplaceHeader from './MarketplaceHeader'
 import MarketplaceProvider from './MarketplaceProvider'
 import MarketplaceSubscription from './MarketplaceSubscription'

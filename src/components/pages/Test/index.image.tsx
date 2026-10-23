@@ -21,7 +21,7 @@ import {
   Image,
   LogoGrayData,
   TransparentPixel,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useEffect, useState } from 'react'
 import { getApiBase, getAssetBase } from 'services/EnvironmentService'
 import { fetchImageWithToken } from 'services/ImageService'

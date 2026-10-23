@@ -23,7 +23,7 @@ import {
   LanguageSwitch,
   Typography,
   LogoGrayData,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Grid } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import {

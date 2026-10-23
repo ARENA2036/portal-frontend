@@ -28,7 +28,7 @@ import {
   Chip,
   ErrorBar,
   CircleProgress,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import {
   type CompanySubscriptionData,
   ProcessStep,

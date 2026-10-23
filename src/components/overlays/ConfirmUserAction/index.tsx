@@ -27,7 +27,7 @@ import {
   useResetPasswordMutation,
   useDeleteMyUserMutation,
 } from 'features/admin/userApiSlice'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import { closeOverlay, exec } from 'features/control/overlay'
 import { useNavigate } from 'react-router-dom'
 import UserService from 'services/UserService'

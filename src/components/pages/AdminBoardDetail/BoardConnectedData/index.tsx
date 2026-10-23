@@ -23,7 +23,7 @@ import {
   Typography,
   StaticTable,
   type TableType,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import './style.scss'
 
 export default function BoardConnectedData() {
@@ -36,7 +36,7 @@ export default function BoardConnectedData() {
     body: [
       ['Personal Information', 'Lorem Personal Information'],
       ['Used Content', 'Ipsum Used Content'],
-      ['ReDriveS Account Data', 'Lorem ReDriveS Account Data'],
+      ['Furniture-X Account Data', 'Lorem Furniture-X Account Data'],
       ['Diagnostic Data'],
     ],
   }

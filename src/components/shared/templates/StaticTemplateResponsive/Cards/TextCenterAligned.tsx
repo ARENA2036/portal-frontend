@@ -21,7 +21,7 @@
 import {
   Typography,
   IconButton,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import type { ProviderProps } from '../StaticTypes'
 import '../style.scss'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'

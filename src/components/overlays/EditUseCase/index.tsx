@@ -30,7 +30,7 @@ import {
   DropArea,
   type DropAreaProps,
   LoadingButton,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { error, success } from 'services/NotifyService'
 import { OVERLAYS } from 'types/Constants'
 import { closeOverlay, show } from 'features/control/overlay'

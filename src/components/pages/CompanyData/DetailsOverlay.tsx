@@ -21,7 +21,7 @@ import {
   Dialog,
   DialogHeader,
   DialogContent,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Box, Divider } from '@mui/material'
 import { useState } from 'react'
 import StatusInformation from './StatusInformation'

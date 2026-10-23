@@ -22,7 +22,7 @@ import {
   Typography,
   Button,
   CircleProgress,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Box, Divider } from '@mui/material'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
 import MuiDialogTitle from '@mui/material/DialogTitle'

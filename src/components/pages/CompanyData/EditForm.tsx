@@ -25,7 +25,7 @@ import {
   Button,
   CircleProgress,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Box } from '@mui/material'
 import { useState } from 'react'
 import { FormFields } from './FormFields'

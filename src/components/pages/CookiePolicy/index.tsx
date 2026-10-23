@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 import {
   PageHeader,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 
 export default function CookiePolicy() {
   const { t } = useTranslation('footer', { keyPrefix: 'cookies' })

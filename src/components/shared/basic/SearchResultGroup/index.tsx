@@ -24,7 +24,7 @@ import Divider from '@mui/material/Divider'
 import type { SearchItem } from 'features/info/search/types'
 import { SearchResultItem } from '../SearchResultItem'
 import { useTranslation } from 'react-i18next'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import { useState } from 'react'
 import './style.scss'
 

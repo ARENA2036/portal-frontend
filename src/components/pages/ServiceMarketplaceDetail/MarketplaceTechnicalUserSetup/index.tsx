@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { useTranslation } from 'react-i18next'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import type { ServiceRequest } from 'features/serviceMarketplace/serviceApiSlice'
 import { useFetchServiceTechnicalUserProfilesQuery } from 'features/serviceManagement/apiSlice'
 import { TechUserTable } from 'components/shared/basic/ReleaseProcess/TechnicalIntegration/TechUserTable'

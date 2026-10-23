@@ -25,12 +25,10 @@
 
 .orange-background-home {
   overflow: hidden;
-  background-image: linear-gradient(
-    to right,
-    #0c231d,
-    #006633,
-    #156082,
-    #688991,
-    #b2d1d7
-  );
+  background-image: linear-gradient(to right, #0f290a, #0f290a);
+}
+
+/* "My Business Applications" title: white on the dark green section */
+.orange-background-home .section-title {
+  color: #ffffff;
 }

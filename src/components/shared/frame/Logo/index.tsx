@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { NavLink } from 'react-router-dom'
-import { Image } from '@arena2036/portal-shared-components-redrives'
+import { Image } from '@arena2036/portal-shared-components-furniture-x'
 import { getAssetBase } from 'services/EnvironmentService'
 
 export const Logo = () => (

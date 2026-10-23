@@ -27,7 +27,7 @@ import {
   Radio,
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Box } from '@mui/material'
 import {
   type ServiceAccountRole,

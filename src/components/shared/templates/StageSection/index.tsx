@@ -18,9 +18,10 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { MainHeader } from '@arena2036/portal-shared-components-redrives'
+import { MainHeader } from '@arena2036/portal-shared-components-furniture-x'
 import { getAssetBase } from 'services/EnvironmentService'
 import { useMediaQuery, useTheme } from '@mui/material'
+import './style.scss'
 
 export default function SearchSection({
   title,
@@ -34,7 +35,7 @@ export default function SearchSection({
     defaultMatches: true,
   })
   return (
-    <div className="stage-home">
+    <div className="stage-home stage-section">
       <MainHeader
         title={title}
         subTitle={description}

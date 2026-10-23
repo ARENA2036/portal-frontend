@@ -23,7 +23,7 @@ import {
   Button,
   LoadingButton,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 
 interface ErrorRegProps {
   loading: boolean

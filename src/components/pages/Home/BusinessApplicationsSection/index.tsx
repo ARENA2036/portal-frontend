@@ -24,7 +24,7 @@ import {
   Typography,
   Carousel,
   Card,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import Box from '@mui/material/Box'
 import uniqueId from 'lodash/uniqueId'
 import PageService from 'services/PageService'

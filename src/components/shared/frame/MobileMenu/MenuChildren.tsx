@@ -18,7 +18,7 @@
  ********************************************************************************/
 
 import { Box, Link, useTheme } from '@mui/material'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import type { MenuItemProps } from './MenuItem'
 

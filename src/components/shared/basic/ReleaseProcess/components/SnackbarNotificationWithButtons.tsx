@@ -24,7 +24,7 @@ import {
   IconButton,
   PageNotifications,
   PageSnackbar,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { Divider, Box, Grid } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'

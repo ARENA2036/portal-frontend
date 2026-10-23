@@ -25,7 +25,7 @@ import {
   DialogContent,
   DialogHeader,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import {
   type AppRole,
   type PortalRoleRequest,

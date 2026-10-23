@@ -24,7 +24,7 @@ import match from 'autosuggest-highlight/match'
 import {
   SelectInput,
   SelectOptions,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import uniqueId from 'lodash/uniqueId'
 import isEqual from 'lodash/isEqual'
 import { useState } from 'react'

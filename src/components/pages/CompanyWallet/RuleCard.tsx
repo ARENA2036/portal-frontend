@@ -20,7 +20,7 @@
 import {
   Tooltips,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import './style.scss'
 import {
   CredentialSubjectStatus,
@@ -138,7 +138,7 @@ export default function RuleCard({
                       </Typography>
                       <img
                         src={`${getAssetBase()}/images/logos/logo.png`}
-                        alt="ReDriveS logo"
+                        alt="Furniture-X logo"
                         style={{
                           width: 40,
                         }}

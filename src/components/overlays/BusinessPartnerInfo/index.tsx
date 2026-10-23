@@ -24,7 +24,7 @@ import {
   DialogActions,
   DialogContent,
   DialogHeader,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { closeOverlay } from 'features/control/overlay'
 import { useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'

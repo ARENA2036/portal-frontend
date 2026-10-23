@@ -22,7 +22,7 @@ import type { ProviderProps } from '../StaticTypes'
 import {
   IconButton,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import '../style.scss'
 import ReactPlayer from 'react-player'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'

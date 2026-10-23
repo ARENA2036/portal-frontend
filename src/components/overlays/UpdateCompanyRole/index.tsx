@@ -33,7 +33,7 @@ import {
   Expand,
   LoadingButton,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { closeOverlay } from 'features/control/overlay'
 import {
   type AgreementsData,

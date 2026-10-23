@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { MainHeader } from '@arena2036/portal-shared-components-redrives'
+import { MainHeader } from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { getAssetBase } from 'services/EnvironmentService'
 

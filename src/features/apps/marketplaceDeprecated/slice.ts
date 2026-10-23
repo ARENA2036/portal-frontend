@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import type { CardItems } from '@arena2036/portal-shared-components-redrives'
+import type { CardItems } from '@arena2036/portal-shared-components-furniture-x'
 import { createSlice } from '@reduxjs/toolkit'
 import type { RootState } from 'features/store'
 import { fetchActive, fetchLatest, fetchSubscriptionStatus } from './actions'

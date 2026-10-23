@@ -51,7 +51,7 @@ import {
   Typography,
   type UploadFileStatus,
   UploadStatus,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import ConnectorFormInputFieldImage from '../components/ConnectorFormInputFieldImage'
 import { download } from 'utils/downloadUtils'
 import type { AppStatusDataState } from 'features/appManagement/types'

@@ -24,7 +24,7 @@ import {
   Button,
   ImageGallery,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import BoardHeader from './BoardHeader'
 import BoardDocuments from './BoardDocuments'
 import BoardProvider from './BoardProvider'

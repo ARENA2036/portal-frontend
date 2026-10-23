@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { ViewSelector } from '@arena2036/portal-shared-components-redrives'
+import { ViewSelector } from '@arena2036/portal-shared-components-furniture-x'
 import DebouncedSearchInput from 'components/shared/basic/Input/DebouncedSearchInput'
 import {
   appsControlSelector,

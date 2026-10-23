@@ -31,6 +31,26 @@ footer {
     }
   }
 
+  .footer-external-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 8px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
   .copyright {
     color: white;
   }

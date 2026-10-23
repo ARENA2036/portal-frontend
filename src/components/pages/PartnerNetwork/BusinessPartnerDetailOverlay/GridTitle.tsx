@@ -19,7 +19,7 @@
  ********************************************************************************/
 
 import { Grid, useTheme } from '@mui/material'
-import { Typography } from '@arena2036/portal-shared-components-redrives'
+import { Typography } from '@arena2036/portal-shared-components-furniture-x'
 
 const GridTitle = ({ title }: { title: string }) => {
   const theme = useTheme()

@@ -24,7 +24,7 @@ import {
   DialogActions,
   DialogHeader,
   LoadingButton,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined'
 import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined'

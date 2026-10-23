@@ -17,7 +17,10 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Chip, Typography } from '@arena2036/portal-shared-components-redrives'
+import {
+  Chip,
+  Typography,
+} from '@arena2036/portal-shared-components-furniture-x'
 import { Box } from '@mui/material'
 import { statusSelector } from 'features/companyData/slice'
 import { useTranslation } from 'react-i18next'

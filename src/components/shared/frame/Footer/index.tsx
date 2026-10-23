@@ -22,7 +22,7 @@ import { useEffect, useState } from 'react'
 import {
   Navigation,
   ScrollToTopButton,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom'
 import './style.scss'
@@ -97,13 +97,29 @@ export const Footer = ({ pages }: { pages: string[] }) => {
         alt="orange background"
       /> */}
       <div className="footer-content">
-        <img
+        {/* <img
           id="footer-logo"
           src="/BMWE.png"
           alt="BMWE 2025 Next Gen EU"
           style={{ display: 'inline', width: '250px', marginTop: '50px' }}
-        />
+        /> */}
         <Navigation unstyled items={items} component={NavLink} />
+        <div className="footer-external-links">
+          <a
+            href="https://furniture-x.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            furniture-x.de
+          </a>
+          <a
+            href="https://www.linkedin.com/company/furniture-x"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
         <span className="copyright">{`${t('content.footer.copyright')}`}</span>
       </div>
     </footer>

@@ -23,7 +23,7 @@ import {
   IconButton,
   Button,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import type { GridColDef } from '@mui/x-data-grid'
 import {
   type SubscribedActiveApps,

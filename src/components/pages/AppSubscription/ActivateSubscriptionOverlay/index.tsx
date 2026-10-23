@@ -30,7 +30,7 @@ import {
   type TableType,
   Typography,
   CircleProgress,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { useTranslation, Trans } from 'react-i18next'
 import { isKeycloakURL } from 'types/Patterns'

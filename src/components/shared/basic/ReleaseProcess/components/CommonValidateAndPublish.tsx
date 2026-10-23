@@ -33,7 +33,7 @@ import {
   CardHorizontal,
   ImageGallery,
   type ImageType,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { Grid, Divider, Box } from '@mui/material'

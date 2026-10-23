@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-import { Cards } from '@arena2036/portal-shared-components-redrives'
+import { Cards } from '@arena2036/portal-shared-components-furniture-x'
 import './style.scss'
 import { useGetItemsQuery } from 'features/info/news/apiSlice'
 

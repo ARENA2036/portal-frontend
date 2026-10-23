@@ -25,7 +25,7 @@ import {
   Chip,
   IconButton,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useDispatch } from 'react-redux'
 import { show } from 'features/control/overlay'
 import EditIcon from '@mui/icons-material/ModeEditOutlineOutlined'

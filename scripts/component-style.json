@@ -4,24 +4,12 @@
     "filePath": "../src/components/pages/companyWallet/WalletCard.tsx",
     "image": {
       "imagePath": "/public/logo.png",
-      "alternateText": "ReDriveS Logo"
+      "alternateText": "Furniture-X Logo"
     },
     "style": {
       "display": "inline",
       "width": "100px",
       "height": "80px"
-    }
-  },
-  "footer-logo": {
-    "componentId": "footer-logo",
-    "filePath": "../src/components/shared/frame/Footer/index.tsx",
-    "image": {
-      "imagePath": "/BMWE.png",
-      "alternateText": "BMWE 2025 Next Gen EU"
-    },
-    "style": {
-      "display": "inline",
-      "width": "350px"
     }
   }
 }

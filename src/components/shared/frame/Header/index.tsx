@@ -31,7 +31,7 @@ import {
   CustomAccordion,
   MainNavigation,
   Typography,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import type { MenuItem, Tree } from 'types/MainTypes'
 import { getAssetBase } from 'services/EnvironmentService'
 import {

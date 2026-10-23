@@ -22,7 +22,7 @@ import {
   IconButton,
   type UploadFileStatus,
   UploadStatus,
-} from '@arena2036/portal-shared-components-redrives'
+} from '@arena2036/portal-shared-components-furniture-x'
 import { useTranslation } from 'react-i18next'
 import { Grid } from '@mui/material'
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
