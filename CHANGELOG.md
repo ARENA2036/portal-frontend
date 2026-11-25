@@ -1,5 +1,9 @@
 # Changelog
 
+### Security
+- Updated nginx to version 1.30.7 to address security vulnerabilities.
+- Updated the Docker base image to nginx/nginx-unprivileged:1.30.7-alpine.
+
 ## 2.4.0
 
 ### Feature
