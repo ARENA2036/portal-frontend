@@ -53,7 +53,7 @@ interface ReleaseProcessWrapperType {
   imagePath?: string
   headerDescription?: string
   headerDescriptionComplete?: string
-  yourCatenaXTeam?: string
+  yourArenaXTeam?: string
   myAppsOverview?: string
   numberOfSteps: number
   onAppsOverviewClick: () => void
@@ -67,7 +67,7 @@ export default function ReleaseProcessWrapper({
   imagePath = `${getAssetBase()}/images/content/submit-app-background.png`,
   headerDescription,
   headerDescriptionComplete,
-  yourCatenaXTeam,
+  yourArenaXTeam,
   myAppsOverview,
   numberOfSteps,
   pageHeaderTitle,
@@ -127,7 +127,7 @@ export default function ReleaseProcessWrapper({
             {headerDescriptionComplete}
           </Typography>
           <Typography variant="body1" sx={{ mb: 2 }}>
-            {yourCatenaXTeam}
+            {yourArenaXTeam}
           </Typography>
           <Button onClick={onAppsOverviewClick}>{myAppsOverview}</Button>
         </MainHeader>
